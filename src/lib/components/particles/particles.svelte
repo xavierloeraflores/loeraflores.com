@@ -4,6 +4,12 @@
 	import { loadSlim } from '@tsparticles/slim'; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
 
 
+	import type { HTMLAttributes } from "svelte/elements";
+	import { cn } from "$lib/utils";
+	type $$Props = HTMLAttributes<HTMLDivElement>;
+	let className: $$Props["class"] = undefined;
+	export { className as class };
+
 	let particlesConfig = {
 		particles: {
 			color: {
@@ -41,7 +47,10 @@
 
 <Particles
         id="tsparticles"
-        class="put your classes here"
+        class ={cn(
+			"",
+			className
+		)}
         style=""
         options="{particlesConfig}"
         on:particlesLoaded="{onParticlesLoaded}"
