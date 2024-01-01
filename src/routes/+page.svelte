@@ -1,8 +1,9 @@
 <script lang ="ts">
-    import {Hero} from "$lib"
+    import {Hero, Particles} from "$lib"
 
 </script>
 
-<div>
+<div class="bg-slate-600">
+    <Particles/>
     <Hero/>
 </div>
