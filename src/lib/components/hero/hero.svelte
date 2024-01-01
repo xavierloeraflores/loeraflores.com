@@ -1,6 +1,14 @@
 <script lang="ts">
+    import type { HTMLAttributes } from "svelte/elements";
+	import { cn } from "$lib/utils";
+	type $$Props = HTMLAttributes<HTMLDivElement>;
+	let className: $$Props["class"] = undefined;
+	export { className as class };
 </script>
-<div>
+<div class ={cn(
+    "p-4",
+    className
+)}>
     <span>Hi, My name is</span>
     <h1 class='text-6xl'>Xavier Loera Flores</h1>
     <h2 class='text-6xl'>I'm a Software Developer</h2>
