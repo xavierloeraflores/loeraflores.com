@@ -3,7 +3,7 @@
 
 </script>
 
-<main class="bg-slate-600">
+<main class="">
     <Particles/>
     <Hero/>
 </main>
