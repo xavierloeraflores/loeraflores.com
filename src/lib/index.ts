@@ -6,5 +6,6 @@ import { Footer } from './components/footer';
 import { Project } from './components/project';
 import { Lightswitch } from './components/lightswitch';
 import { Toaster } from './components/ui/sonner';
+import { Button, buttonVariants } from './components/ui/button';
 
-export { Hero, Particles, Header, Footer, Project, Lightswitch, Toaster };
+export { Hero, Particles, Header, Footer, Project, Lightswitch, Toaster, Button, buttonVariants };
