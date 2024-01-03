@@ -5,7 +5,7 @@
     }
 </script>
 
-<header class='w-full flex flex-row justify-around text-white'>
+<header class='w-full flex flex-row justify-between text-white'>
     <div id="logo">
         <a href="/">&lt;🌹&gt;</a>
     </div>
