@@ -12,7 +12,8 @@
 
 	let particlesConfig ={
   background: {
-    color: "#0b032d"
+    // color: "#0b032d"
+    color: "#000000"
   },
   backgroundMode: {
     enable: true
