@@ -4,5 +4,6 @@ import { Particles } from './components/particles';
 import { Header } from './components/header';
 import { Footer } from './components/footer';
 import { Project } from './components/project';
+import { Lightswitch } from './components/lightswitch';
 
-export { Hero, Particles, Header, Footer, Project };
+export { Hero, Particles, Header, Footer, Project, Lightswitch };
