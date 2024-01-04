@@ -4,10 +4,30 @@
     import type { HTMLAttributes } from "svelte/elements";
 	import { cn } from "$lib/utils";
 
-	type $$Props = HTMLAttributes<HTMLDivElement>;
-
+type $$Props = HTMLAttributes<HTMLDivElement> & {
+    title: string;
+    description: string;
+    primaryLink: string;
+    primaryLinkText: string;
+    secondaryLink: string;
+    secondaryLinkText: string;
+};
 	let className: $$Props["class"] = undefined;
 	export { className as class };
+    export let title:string;
+    export let description:string;
+    export let primaryLink:string;
+    export let primaryLinkText:string;
+    export let secondaryLink:string;
+    export let secondaryLinkText:string;
+
+    function primaryButton() {
+        window.open(primaryLink, '_blank')
+    }
+    function secondaryButton() {
+        window.open(secondaryLink, '_blank')
+    }
+
 </script>
 
 <Card class={cn(
@@ -15,15 +35,14 @@
     className
 )}>
     <CardHeader>
-        <CardTitle>Card Title</CardTitle>
-        <CardDescription>A Descriptive Card Description</CardDescription>
+        <CardTitle>{title}</CardTitle>
+        <CardDescription>{description}</CardDescription>
     </CardHeader>
     <CardContent>
-        Card Content
     </CardContent>
-    <CardFooter>
-        <Button variant="outline">GitHub</Button>
-        <Button>Live</Button>
+    <CardFooter class="flex flex-row items-center justify-evenly">
+        <Button variant="outline" on:click={primaryButton}>{primaryLinkText}</Button>
+        <Button on:click={secondaryButton}>{secondaryLinkText}</Button>
     </CardFooter>
 
 </Card>
