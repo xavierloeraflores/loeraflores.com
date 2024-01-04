@@ -1,14 +1,23 @@
 <script lang="ts">
-	import Particles, { particlesInit } from '@tsparticles/svelte';
+	import { particlesInit } from '@tsparticles/svelte';
 	// import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
 	import { loadSlim } from '@tsparticles/slim'; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
-
+	import { onMount } from 'svelte';
 
 	import type { HTMLAttributes } from "svelte/elements";
 	import { cn } from "$lib/utils";
 	type $$Props = HTMLAttributes<HTMLDivElement>;
 	let className: $$Props["class"] = undefined;
 	export { className as class };
+
+	let Particles: any;
+	onMount(async () => {
+		const module = await import('@tsparticles/svelte');
+
+		Particles = module.default;
+		// you can use onMount to trigger the start of the animation
+		// or any other function
+	});
 
 	let particlesConfig ={
   background: {
@@ -90,7 +99,8 @@
 	});
 </script>
 
-<Particles
+<svelte:component
+		this={Particles}
         id="tsparticles"
         class ={cn(
 			"-z-10 fixed inset-0",
