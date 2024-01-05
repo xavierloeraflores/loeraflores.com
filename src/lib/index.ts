@@ -8,6 +8,7 @@ import { Lightswitch } from './components/lightswitch';
 import { Toaster } from './components/ui/sonner';
 import { Button, buttonVariants } from './components/ui/button';
 import { GitHubSocial, TwitterSocial, LinkedInSocial, SiteSocial } from './components/socials';
+import { Section } from './components/section';
 
 export {
 	Hero,
@@ -22,5 +23,6 @@ export {
 	GitHubSocial,
 	TwitterSocial,
 	LinkedInSocial,
-	SiteSocial
+	SiteSocial,
+	Section
 };
