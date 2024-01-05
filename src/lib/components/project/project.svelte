@@ -1,31 +1,21 @@
 <script lang="ts">
     import {Card, CardContent, CardTitle, CardDescription, CardFooter, CardHeader} from "$lib/components/ui/card"
     import { Button } from "$lib/components/ui/button";
+    import Badge from "../ui/badge/badge.svelte";
     import type { HTMLAttributes } from "svelte/elements";
 	import { cn } from "$lib/utils";
+	import type { Project } from "$lib/types";
+	import type { ProjectLink } from "$lib/types/project";
 
-type $$Props = HTMLAttributes<HTMLDivElement> & {
-    title: string;
-    description: string;
-    primaryLink: string;
-    primaryLinkText: string;
-    secondaryLink: string;
-    secondaryLinkText: string;
-};
+    type $$Props = HTMLAttributes<HTMLDivElement> & {
+        project:Project
+    };
 	let className: $$Props["class"] = undefined;
 	export { className as class };
-    export let title:string;
-    export let description:string;
-    export let primaryLink:string;
-    export let primaryLinkText:string;
-    export let secondaryLink:string;
-    export let secondaryLinkText:string;
+    export let project:Project
 
-    function primaryButton() {
-        window.open(primaryLink, '_blank')
-    }
-    function secondaryButton() {
-        window.open(secondaryLink, '_blank')
+    function linkButton(link:ProjectLink) {
+        window.open(link.url, '_blank')
     }
 
 </script>
@@ -35,14 +25,18 @@ type $$Props = HTMLAttributes<HTMLDivElement> & {
     className
 )}>
     <CardHeader>
-        <CardTitle>{title}</CardTitle>
-        <CardDescription>{description}</CardDescription>
+        <CardTitle>{project.title}</CardTitle>
+        <CardDescription>{project.description}</CardDescription>
     </CardHeader>
     <CardContent>
+        {#each project.technologies as tag}
+        <Badge class="m-1">{tag}</Badge>
+        {/each}
     </CardContent>
     <CardFooter class="flex flex-row items-center justify-evenly">
-        <Button variant="outline" on:click={primaryButton}>{primaryLinkText}</Button>
-        <Button on:click={secondaryButton}>{secondaryLinkText}</Button>
+        {#each project.links as link}
+        <Button variant="outline" on:click={()=>linkButton(link)}>{link.name}</Button>
+        {/each}
     </CardFooter>
 
 </Card>
