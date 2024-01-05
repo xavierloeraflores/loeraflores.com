@@ -14,8 +14,7 @@
     "w-full flex flex-col items-center justify-center",
     className
 )}>
-<h2 class="w-full text-center text-xl text-muted-foreground">{title}</h2>
-<Separator class="w-full flex items-center justify-center"> 
-    <slot></slot>
-</Separator>
+    <h2 class="w-full text-center text-xl text-muted-foreground">{title}</h2>
+    <Separator class="w-full"/>
+    <slot />
 </section>
