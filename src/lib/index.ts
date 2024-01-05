@@ -9,6 +9,7 @@ import { Toaster } from './components/ui/sonner';
 import { Button, buttonVariants } from './components/ui/button';
 import { GitHubSocial, TwitterSocial, LinkedInSocial, SiteSocial } from './components/socials';
 import { Section } from './components/section';
+import { Portfolio } from './components/portfolio';
 
 export {
 	Hero,
@@ -24,5 +25,6 @@ export {
 	TwitterSocial,
 	LinkedInSocial,
 	SiteSocial,
-	Section
+	Section,
+	Portfolio
 };
