@@ -16,5 +16,7 @@
 )}>
     <h2 class="w-full text-center text-xl text-muted-foreground">{title}</h2>
     <Separator class="w-full"/>
-    <slot />
+    <div class="w-full">
+        <slot />
+    </div>
 </section>
