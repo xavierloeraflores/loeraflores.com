@@ -1,12 +1,20 @@
 <script lang="ts">
-    import { Lightswitch } from '$lib'
-    let showMenu = false;
-    const toggleMenu = () => {
-        showMenu = !showMenu;
+  import type { HTMLAttributes } from "svelte/elements";
+  import { cn } from "$lib/utils";
+  type $$Props = HTMLAttributes<HTMLDivElement>;
+  let className: $$Props["class"] = undefined;
+  export { className as class };
+
+  import { Lightswitch } from '$lib'
+  let showMenu = false;
+  const toggleMenu = () => {
+      showMenu = !showMenu;
     }
 </script>
 
-<header class='w-full flex flex-row justify-between text-primary text-4xl p-4'>
+<header class= {cn("w-full flex flex-row justify-between text-primary text-4xl p-4",
+  className
+)}>
     <div id="left">
         <a href="/">&lt;🌹&gt;</a>
     </div>
