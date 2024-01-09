@@ -20,6 +20,51 @@
 	});
 
 	let particlesConfig ={
+	background: {
+		// color: "#0b032d"
+		color: "#233554"
+	},
+	backgroundMode: {
+		enable: true
+	},
+	particles: {
+		color: {
+		value: ["#0a192f", "#112240", "#8892b0"]
+		},
+		links: {
+		color: "#ccd6f6",
+		enable: true
+		},
+		move: {
+		enable: true,
+		speed: 1
+		},
+		size: {
+		value: 5,
+		random: {
+			enable: true,
+			minimumValue: 1
+		},
+		animation: {
+			enable: true,
+			speed: 2.5,
+			minimumValue: 1
+		}
+		},
+		opacity: {
+		value: 0.8,
+		random: {
+			enable: true,
+			minimumValue: 0.4
+		}
+		},
+		number:{
+			value:100
+		}
+	}
+}
+
+	let particlesConfigOld ={
   background: {
     // color: "#0b032d"
     color: "#000000"
