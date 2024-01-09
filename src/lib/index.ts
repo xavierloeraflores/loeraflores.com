@@ -10,6 +10,7 @@ import { Button, buttonVariants } from './components/ui/button';
 import { GitHubSocial, TwitterSocial, LinkedInSocial, SiteSocial } from './components/socials';
 import { Section } from './components/section';
 import { Portfolio } from './components/portfolio';
+import { Contact } from './components/contact';
 
 export {
 	Hero,
@@ -26,5 +27,6 @@ export {
 	LinkedInSocial,
 	SiteSocial,
 	Section,
-	Portfolio
+	Portfolio,
+	Contact
 };
