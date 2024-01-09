@@ -1,14 +1,32 @@
 <script lang="ts">
-  import type { HTMLAttributes } from "svelte/elements";
-  import { cn } from "$lib/utils";
-  type $$Props = HTMLAttributes<HTMLDivElement>;
-  let className: $$Props["class"] = undefined;
-  export { className as class };
+    import {Drawer, DrawerTrigger, DrawerContent, DrawerHeader, DrawerFooter, DrawerClose, DrawerPortal, DrawerOverlay} from '$lib/components/ui/drawer'
+    import type { HTMLAttributes } from "svelte/elements";
+    import { cn } from "$lib/utils";
+    type $$Props = HTMLAttributes<HTMLDivElement>;
+    let className: $$Props["class"] = undefined;
+    export { className as class };
 
-  import { Lightswitch } from '$lib'
-  let showMenu = false;
-  const toggleMenu = () => {
-      showMenu = !showMenu;
+    import { Lightswitch } from '$lib'
+    let scroll = false;
+    let scrollTo = ""
+    const drawerOpen = () =>{
+        scroll = false;
+        scrollTo = ""
+    }
+    const drawerClose = () =>{
+        if(scroll){
+            setTimeout(() => {
+                const element = document.getElementById(scrollTo);
+                if (element) {
+                    window.scrollTo(0, element.offsetTop);
+                }
+            }, 500);
+        }
+    }
+    const anchorClick = (e:MouseEvent) =>{
+        e.preventDefault();
+        scroll = true;
+        scrollTo = (e.target as HTMLAnchorElement).href.split("#")[1];
     }
 </script>
 
@@ -21,22 +39,32 @@
     <div id='right' class="flex flex-row">
         <div id='nav'>
             <div id='mobile'>
-                <button on:click={toggleMenu} id="hamburger" class={showMenu ? 'hidden' : ''}>
-                    🍔
-                </button>
-                <button on:click={toggleMenu} id="hamburger" class={!showMenu ? 'hidden' : ''}>
-                    ❌
-                </button>
-                <div class={!showMenu ? 'hidden' : ''}>
-                    <a href="#about">About</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#contact">Contact</a>
-                </div>
+                <Drawer onClose={drawerClose}>
+                    <DrawerTrigger onclick={drawerOpen}>🍔</DrawerTrigger>
+                    <DrawerPortal>
+                        <DrawerContent>
+                            <DrawerHeader>Menu</DrawerHeader>
+                            <DrawerFooter>
+                                <DrawerClose>
+                                    <a href="#about" on:click={anchorClick}>About</a>
+                                </DrawerClose>
+                                <DrawerClose>
+                                    <a href="#Portfolio" on:click={anchorClick}>Portfolio</a>
+                                </DrawerClose>
+                                <DrawerClose>
+                                    <a href="#Contact" on:click={anchorClick}>Contact</a>
+                                </DrawerClose>
+                                <DrawerClose>❌</DrawerClose>
+                            </DrawerFooter>
+                        </DrawerContent> 
+                    </DrawerPortal>
+                    <DrawerOverlay/>
+                </Drawer>
             </div>
             <div id="desktop" class="flex flex-row justify-between">
-                <a href="#about" class="m-2">About</a>
-                <a href="#projects" class="m-2">Projects</a>
-                <a href="#contact" class="m-2">Contact</a>
+                <a href="#About" class="m-2">About</a>
+                <a href="#Portfolio" class="m-2">Portfolio</a>
+                <a href="#Contact" class="m-2">Contact</a>
             </div>
         </div>
         <Lightswitch />
