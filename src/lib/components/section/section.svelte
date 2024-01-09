@@ -11,12 +11,12 @@
 </script>
 
 <section id={title} class={cn(
-    "w-full flex flex-col items-center justify-center",
+    "w-full h-screen flex flex-col items-center",
     className
 )}>
-    <h2 class="w-full text-center text-xl text-muted-foreground">{title}</h2>
+    <h2 class="w-full text-center text-2xl text-muted-foreground scroll-m-20 border-b pb-2 font-semibold tracking-tight transition-colors first:mt-0">{title}</h2>
     <Separator class="w-full"/>
-    <div class="w-full">
+    <div class="w-full h-max">
         <slot />
     </div>
 </section>
