@@ -7,7 +7,7 @@
     };
 	let className: $$Props["class"] = undefined;
 	export { className as class };
-    let link:string;
+    export let link:string;
 </script>
 
 <a href={link} target="_blank" class={cn(
