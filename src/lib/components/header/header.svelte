@@ -23,10 +23,19 @@
             }, 500);
         }
     }
-    const anchorClick = (e:MouseEvent) =>{
+    const drawerClick = (e:MouseEvent) =>{
         e.preventDefault();
         scroll = true;
         scrollTo = (e.target as HTMLAnchorElement).href.split("#")[1];
+    }
+
+    const anchorClick = (e:MouseEvent) =>{
+        e.preventDefault();
+        let link = (e.target as HTMLAnchorElement).href.split("#")[1];
+        const element = document.getElementById(link);
+        if (element) {
+                    window.scrollTo(0, element.offsetTop);
+        }
     }
 </script>
 
@@ -46,13 +55,13 @@
                             <DrawerHeader>Menu</DrawerHeader>
                             <DrawerFooter>
                                 <DrawerClose>
-                                    <a href="#about" on:click={anchorClick}>About</a>
+                                    <a href="#about" on:click={drawerClick}>About</a>
                                 </DrawerClose>
                                 <DrawerClose>
-                                    <a href="#Portfolio" on:click={anchorClick}>Portfolio</a>
+                                    <a href="#Portfolio" on:click={drawerClick}>Portfolio</a>
                                 </DrawerClose>
                                 <DrawerClose>
-                                    <a href="#Contact" on:click={anchorClick}>Contact</a>
+                                    <a href="#Contact" on:click={drawerClick}>Contact</a>
                                 </DrawerClose>
                                 <DrawerClose>❌</DrawerClose>
                             </DrawerFooter>
@@ -62,9 +71,9 @@
                 </Drawer>
             </div>
             <div id="desktop" class="flex flex-row justify-between">
-                <a href="#About" class="m-2">About</a>
-                <a href="#Portfolio" class="m-2">Portfolio</a>
-                <a href="#Contact" class="m-2">Contact</a>
+                <a href="#About" on:click={anchorClick} class="m-2">About</a>
+                <a href="#Portfolio" on:click={anchorClick} class="m-2">Portfolio</a>
+                <a href="#Contact" on:click={anchorClick} class="m-2">Contact</a>
             </div>
         </div>
         <Lightswitch />
