@@ -12,8 +12,8 @@
     let degreeCount= educationData.length
 </script>
     
-<Section title="Education" class="flex-col justify-center content-center align-middle items-center">
-    <GraduationCap size="64" class="color-primary-foreground"/>
+<Section title="Education">
+    <GraduationCap size="64" class="color-primary-foreground my-4"/>
     <Tabs class='max-w-[900px] min-w-[500px] sm:min-w-[300px] sm:w-full'>
         <List class={`flex flex-row justify-evenly w-full`}>
             {#each educationData as edu}
