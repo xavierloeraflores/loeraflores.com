@@ -13,7 +13,7 @@
 
 <Saos animation={'fade-in 2.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both'} top={250} bottom={250} once={true}>
 <section id={title} class={cn(
-    "w-screen min-h-96 flex flex-col items-center",
+    "w-screen min-h-96 flex flex-col items-center pb-10",
     className
     )}>
             <h2 class="w-full text-center text-4xl sm:text-2xl text-primary scroll-m-20 pb-2 font-semibold tracking-tight transition-colors first:mt-0">{title}</h2>
