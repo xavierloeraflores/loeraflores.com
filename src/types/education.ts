@@ -4,4 +4,5 @@ export type Education = {
 	dates: string;
 	location: string;
 	link: string;
+	tab: string;
 };

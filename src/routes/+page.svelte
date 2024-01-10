@@ -1,6 +1,6 @@
 <script lang="ts">
     import {Hero, Particles, Portfolio, Contact, Education} from "$lib"
-    import { projectsData } from "../data";
+    import { projectsData, educationData } from "../data";
 
 </script>
 
@@ -8,6 +8,6 @@
     <Particles/>
     <Hero/>
     <Portfolio projects={projectsData}/>
-    <Education/>
+    <Education {educationData}/>
     <Contact/>
 </main>

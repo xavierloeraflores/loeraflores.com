@@ -4,28 +4,32 @@ const WGU: Education = {
 	degree: 'B.S. Computer Science',
 	dates: '2019 - 2021',
 	location: 'Millcreek UT',
-	link: 'https://www.wgu.edu/'
+	link: 'https://www.wgu.edu/',
+	tab: 'BS CS'
 };
 const SJSU: Education = {
 	school: 'San Jose State University',
 	degree: 'Fullstack Bootcamp',
 	dates: '2021',
 	location: 'San Jose CA',
-	link: 'https://www.sjsu.edu/'
+	link: 'https://www.sjsu.edu/',
+	tab: 'Web Dev'
 };
 const CIS: Education = {
 	school: 'Mission College',
 	degree: 'A.S. Computer Information Systems',
 	dates: '2017-2022',
 	location: 'Santa Clara CA',
-	link: 'https://www.missioncollege.edu/'
+	link: 'https://www.missioncollege.edu/',
+	tab: 'AS CIS'
 };
 const CodePath: Education = {
 	school: 'CodePath.org',
 	degree: 'IOS Development Program',
 	dates: '2020',
 	location: 'San Francisco CA',
-	link: 'https://codepath.org/'
+	link: 'https://codepath.org/',
+	tab: 'IOS'
 };
 
 const MS: Education = {
@@ -33,7 +37,8 @@ const MS: Education = {
 	degree: 'A.A. Liberal Arts: Math & Science',
 	dates: '2017-2020',
 	location: 'Santa Clara CA',
-	link: 'https://www.missioncollege.edu/'
+	link: 'https://www.missioncollege.edu/',
+	tab: 'AA'
 };
 
 export const educationData: Education[] = [WGU, SJSU, CIS, CodePath, MS];
