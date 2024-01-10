@@ -39,7 +39,7 @@
     }
 </script>
 
-<header class= {cn("w-full flex flex-row justify-between text-primary text-4xl p-4",
+<header class= {cn("w-full flex flex-row justify-between text-primary text-4xl p-4 pb-5 fixed z-50 top-0 bg-foreground",
   className
 )}>
     <div id="left">
@@ -71,9 +71,9 @@
                 </Drawer>
             </div>
             <div id="desktop" class="flex flex-row justify-between">
-                <a href="#About" on:click={anchorClick} class="m-2">About</a>
-                <a href="#Portfolio" on:click={anchorClick} class="m-2">Portfolio</a>
-                <a href="#Contact" on:click={anchorClick} class="m-2">Contact</a>
+                <a href="#About" on:click={anchorClick} class="mx-2">About</a>
+                <a href="#Portfolio" on:click={anchorClick} class="mx-2">Portfolio</a>
+                <a href="#Contact" on:click={anchorClick} class="mx-2">Contact</a>
             </div>
         </div>
         <Lightswitch />

@@ -4,7 +4,7 @@
     import { toggleMode } from "mode-watcher";
   </script>
   
-  <Button on:click={toggleMode}  size="icon" class="bg-transparent divide-primary text-primary pt-3">
+  <Button on:click={toggleMode}  size="icon" class="bg-transparent divide-primary text-primary">
     <Sun
       class="absolute h-[1.5rem] w-[1.5rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0"
     />
