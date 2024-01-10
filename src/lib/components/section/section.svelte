@@ -16,7 +16,7 @@
     "w-screen min-h-96 flex flex-col items-center pb-10",
     className
     )}>
-            <h2 class="w-full text-center text-4xl sm:text-2xl text-primary scroll-m-20 pb-2 font-semibold tracking-tight transition-colors first:mt-0">{title}</h2>
+            <h2 class="w-full text-center sm:text-4xl text-2xl text-primary scroll-m-20 pb-2 font-semibold tracking-tight transition-colors first:mt-0">{title}</h2>
             <Separator class=" w-11/12 my-2"/>
                 <slot class=" max-w-screen-2xl"/>
         </section>

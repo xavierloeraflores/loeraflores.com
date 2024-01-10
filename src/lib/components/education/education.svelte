@@ -14,10 +14,10 @@
     
 <Section title="Education">
     <GraduationCap size="64" class="color-primary-foreground my-4"/>
-    <Tabs class='max-w-[900px] min-w-[500px] sm:min-w-[300px] sm:w-full'>
-        <List class={`flex flex-row justify-evenly w-full`}>
+    <Tabs class='max-w-[900px] sm:min-w-[500px] min-w-[200px] w-full'>
+        <List class={`flex flex-row justify-evenly  w-full`}>
             {#each educationData as edu}
-            <Trigger class="sm:px-0" value={edu.degree}>{edu.tab}</Trigger>
+            <Trigger class="px-0 sm:px-3" value={edu.degree}>{edu.tab}</Trigger>
             {/each}
         </List>
         {#each educationData as edu}

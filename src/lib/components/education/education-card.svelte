@@ -10,9 +10,9 @@
 
 <Card class="bg-background">
     <CardHeader class="flex justify-items-center justify-center align-middle items-center">
-        <CardTitle class = "text-primary scroll-m-20  pb-2 text-2xl sm:text-xl font-semibold tracking-tight first:mt-0">{edu.degree}</CardTitle>
+        <CardTitle class = "text-primary scroll-m-20  pb-2 sm:text-2xl text-xl font-semibold tracking-tight first:mt-0">{edu.degree}</CardTitle>
         <CardDescription class="flex flex-row items-center justify-center ">
-            <span class="text-lg sm:text-md font-medium leading-none mr-2">{edu.dates}</span>
+            <span class="sm:text-lg text-md font-medium leading-none mr-2">{edu.dates}</span>
         </CardDescription>
     </CardHeader>
     <CardContent class="flex justify-center items-centers justify-items-center">
@@ -20,6 +20,6 @@
     </CardContent>
     <Separator />
     <CardFooter class="flex flex-row p-4 w-full justify-evenly">
-        <a href="https://www.wgu.edu/" class="text-lg sm:text-md font-medium leading-none mr-2">{edu.school}, {edu.location}</a>
+        <a href="https://www.wgu.edu/" class="sm:text-lg text-md font-medium leading-none mr-2">{edu.school}, {edu.location}</a>
     </CardFooter>
 </Card>
