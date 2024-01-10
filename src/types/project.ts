@@ -7,6 +7,7 @@ enum ProjectLinkIcon {
 type ProjectLink = {
 	name: string;
 	url: string;
+	icon: ProjectLinkIcon;
 };
 
 type Project = {
