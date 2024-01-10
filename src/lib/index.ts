@@ -11,6 +11,7 @@ import { GitHubSocial, TwitterSocial, LinkedInSocial, SiteSocial } from './compo
 import { Section } from './components/section';
 import { Portfolio } from './components/portfolio';
 import { Contact } from './components/contact';
+import { Education } from './components/education';
 
 export {
 	Hero,
@@ -28,5 +29,6 @@ export {
 	SiteSocial,
 	Section,
 	Portfolio,
-	Contact
+	Contact,
+	Education
 };

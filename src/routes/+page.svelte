@@ -1,5 +1,5 @@
 <script lang="ts">
-    import {Hero, Particles, Portfolio, Contact} from "$lib"
+    import {Hero, Particles, Portfolio, Contact, Education} from "$lib"
     import type {Project} from "$lib/types/";
 
     const project1:Project = {
@@ -54,5 +54,6 @@
     <Particles/>
     <Hero/>
     <Portfolio {projects}/>
+    <Education/>
     <Contact/>
 </main>
