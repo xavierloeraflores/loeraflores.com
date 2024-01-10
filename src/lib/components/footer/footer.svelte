@@ -10,7 +10,7 @@
   className
 )}>
     <a href="/">
-      <span class="font-bold text-primary-foreground">Xavier Loera Flores</span>
+      <span class="font-bold text-secondary-foreground scroll-m-20 text-xl tracking-tight">Xavier Loera Flores</span>
     </a>
-    <span class="text-center text-primary-foreground">Created With SvelteKit</span>
+    <span class="text-center text-primary scroll-m-20 text-xl font-semibold tracking-tight">Created With SvelteKit</span>
   </footer>
