@@ -1,4 +1,6 @@
 <script lang="ts">
+    import {buttonVariants} from '$lib'
+    import {Menu} from 'lucide-svelte'
     import {Drawer, DrawerTrigger, DrawerContent, DrawerHeader, DrawerFooter, DrawerClose, DrawerPortal, DrawerOverlay} from '$lib/components/ui/drawer'
     import type { HTMLAttributes } from "svelte/elements";
     import { cn } from "$lib/utils";
@@ -49,7 +51,7 @@
         <div id='nav'>
             <div id='mobile'>
                 <Drawer onClose={drawerClose}>
-                    <DrawerTrigger onclick={drawerOpen}>🍔</DrawerTrigger>
+                    <DrawerTrigger onclick={drawerOpen} class={buttonVariants({variant:"ghost", size:"default"})+"bg-foreground"}><Menu class="h-[1.5rem] w-[1.5rem] scale-100"/></DrawerTrigger>
                     <DrawerPortal>
                         <DrawerContent>
                             <DrawerHeader>Menu</DrawerHeader>
