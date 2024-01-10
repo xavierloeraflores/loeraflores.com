@@ -6,11 +6,9 @@
   export { className as class };
 </script>
 
-<footer class= {cn("flex flex-col items-center justify-center divide-border border-t",
+<footer class= {cn("flex flex-col items-center justify-center divide-border border-t min-h-28",
   className
 )}>
-    <a href="/">
-      <span class="font-bold text-secondary-foreground scroll-m-20 text-xl tracking-tight">Xavier Loera Flores</span>
-    </a>
+    <span class="font-bold text-secondary-foreground scroll-m-20 text-xl tracking-tight">Xavier Loera Flores</span>
     <span class="text-center text-primary scroll-m-20 text-xl font-semibold tracking-tight">Created With SvelteKit</span>
   </footer>
