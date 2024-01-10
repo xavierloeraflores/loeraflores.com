@@ -17,7 +17,7 @@
     <Tabs class='max-w-[900px] min-w-[500px] sm:min-w-[300px] sm:w-full'>
         <List class={`flex flex-row justify-evenly w-full`}>
             {#each educationData as edu}
-            <Trigger value={edu.degree}>{edu.tab}</Trigger>
+            <Trigger class="sm:px-0" value={edu.degree}>{edu.tab}</Trigger>
             {/each}
         </List>
         {#each educationData as edu}
