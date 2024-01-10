@@ -14,7 +14,7 @@
     
 <Section title="Education" class="flex-col justify-center content-center align-middle items-center">
     <GraduationCap size="64" class="color-primary-foreground"/>
-    <Tabs class='max-w-[900px] min-w-[500px]'>
+    <Tabs class='max-w-[900px] min-w-[500px] sm:min-w-[300px] sm:w-full'>
         <List class={`flex flex-row justify-evenly w-full`}>
             {#each educationData as edu}
             <Trigger value={edu.degree}>{edu.tab}</Trigger>
