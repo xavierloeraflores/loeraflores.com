@@ -16,7 +16,5 @@
 )}>
     <h2 class="w-full text-center text-2xl text-muted-foreground scroll-m-20 border-b pb-2 font-semibold tracking-tight transition-colors first:mt-0">{title}</h2>
     <Separator class="w-full"/>
-    <div class="w-full h-max">
-        <slot />
-    </div>
+    <slot />
 </section>
