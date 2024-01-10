@@ -27,7 +27,7 @@
 <Section title="Contact" class="flex-col justify-center content-center align-middle items-center">
     <Card class="max-w-[750px]">
         <CardHeader class="flex justify-items-center justify-center align-middle items-center">
-            <CardTitle class = "text-primary-foreground scroll-m-20  pb-2 text-2xl font-semibold tracking-tight first:mt-0">Let's Get In Touch </CardTitle>
+            <CardTitle class = "text-foreground scroll-m-20  pb-2 text-2xl font-semibold tracking-tight first:mt-0">Let's Get In Touch </CardTitle>
             <CardDescription class="flex flex-row items-center justify-center ">
                 <a href="mailto:xavier@loeraflores.tech" class="text-lg font-medium leading-none mr-2">xavier@loeraflores.tech</a>
                 <Button on:click={copy} variant="outline"><Copy/></Button>
