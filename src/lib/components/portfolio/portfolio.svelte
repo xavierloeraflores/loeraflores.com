@@ -1,8 +1,8 @@
 <script lang="ts">
-import { Section, Project } from '$lib';
-import type { Project as ProjectType } from '../../../types';
-export let projects: ProjectType[];
-
+    import Project from "./project.svelte";
+    import { Section } from '$lib';
+    import type { Project as ProjectType } from '../../../types';
+    export let projects: ProjectType[];
 </script>
 
 <Section title="Portfolio" class="">
