@@ -1,3 +1,3 @@
-import type { Project } from './project';
+import type { Project, ProjectLink, ProjectLinkIcon } from './project';
 
-export type { Project };
+export type { Project, ProjectLink, ProjectLinkIcon };
