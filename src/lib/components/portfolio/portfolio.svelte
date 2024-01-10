@@ -6,7 +6,7 @@
 </script>
 
 <Section title="Portfolio" class="">
-    <div class="grid gap-8 grid-flow-row xl:grid-cols-4 lg:grid-cols-3 md: grid-cols-2 sm:grid-cols-1">
+    <div class="grid gap-8 grid-flow-row xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1">
         {#each projects as project}
         <Project {project}/>
         {/each}

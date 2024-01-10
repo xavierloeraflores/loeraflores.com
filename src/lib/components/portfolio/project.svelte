@@ -21,10 +21,10 @@
 </script>
 
 <Card class={cn(
-    "rounded-lg w-96 border bg-card text-card-foreground shadow-sm",
+    "rounded-lg w-96 border bg-card text-card-foreground shadow flex flex-col justify-between",
     className
 )}>
-    <CardHeader>
+    <CardHeader class=' min-h-28'>
         <CardTitle>{project.title}</CardTitle>
         <CardDescription>{project.description}</CardDescription>
     </CardHeader>
@@ -35,7 +35,7 @@
     </CardContent>
     <CardFooter class="flex flex-row items-center justify-evenly">
         {#each project.links as link}
-        <Button variant="outline" on:click={()=>linkButton(link)}>{link.name}</Button>
+        <Button variant="secondary" on:click={()=>linkButton(link)}>{link.name}</Button>
         {/each}
     </CardFooter>
 
