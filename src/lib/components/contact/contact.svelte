@@ -1,4 +1,5 @@
 <script lang="ts">
+    import {AtSign} from 'lucide-svelte';
     import { Section, Button } from '$lib';
     import {toast} from 'svelte-sonner'
     import {Card, CardContent, CardTitle, CardDescription, CardFooter, CardHeader} from "$lib/components/ui/card"
@@ -25,6 +26,7 @@
 </script>
     
 <Section title="Contact" class="flex-col justify-center content-center align-middle items-center">
+    <AtSign size="64" class="color-primary-foreground"/>
     <Card class="max-w-[750px]">
         <CardHeader class="flex justify-items-center justify-center align-middle items-center">
             <CardTitle class = "text-foreground scroll-m-20  pb-2 text-2xl font-semibold tracking-tight first:mt-0">Let's Get In Touch </CardTitle>
