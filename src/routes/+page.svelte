@@ -1,6 +1,6 @@
 <script lang="ts">
     import {Hero, Particles, Portfolio, Contact, Education} from "$lib"
-    import type {Project} from "$lib/types/";
+    import type {Project} from "../types";
 
     const project1:Project = {
         title: "Project 1",

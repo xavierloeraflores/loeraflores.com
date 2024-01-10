@@ -4,8 +4,8 @@
     import Badge from "../ui/badge/badge.svelte";
     import type { HTMLAttributes } from "svelte/elements";
 	import { cn } from "$lib/utils";
-	import type { Project } from "$lib/types";
-	import type { ProjectLink } from "$lib/types/project";
+	import type { Project } from "../../../types";
+	import type { ProjectLink } from "../../../types/project";
 
     type $$Props = HTMLAttributes<HTMLDivElement> & {
         project:Project
