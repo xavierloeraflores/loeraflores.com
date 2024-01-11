@@ -2,7 +2,7 @@ import { type Education } from '../types';
 const WGU: Education = {
 	school: 'Western Governors University',
 	degree: 'B.S. Computer Science',
-	dates: '2019 - 2021',
+	dates: '2022 - 2024',
 	location: 'Millcreek UT',
 	link: 'https://www.wgu.edu/',
 	tab: 'BS CS'
@@ -18,7 +18,7 @@ const SJSU: Education = {
 const CIS: Education = {
 	school: 'Mission College',
 	degree: 'A.S. Computer Information Systems',
-	dates: '2017-2022',
+	dates: '2017 - 2022',
 	location: 'Santa Clara CA',
 	link: 'https://www.missioncollege.edu/',
 	tab: 'AS CIS'
@@ -35,7 +35,7 @@ const CodePath: Education = {
 const MS: Education = {
 	school: 'Mission College',
 	degree: 'A.A. Liberal Arts: Math & Science',
-	dates: '2017-2020',
+	dates: '2017 - 2020',
 	location: 'Santa Clara CA',
 	link: 'https://www.missioncollege.edu/',
 	tab: 'AA'
