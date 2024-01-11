@@ -195,8 +195,21 @@ const Xavierslist: Project = {
 	],
 	technologies: ['Go', 'Fiber', 'Next.js', 'TypeScript', 'Tailwind CSS', 'Vercel']
 };
+const LoeraFloresDB: Project = {
+	title: 'LoeraFloresDB (In Progress)',
+	description: 'Drizzle project to manage multiple database projects in one planetScale database',
+	links: [
+		{
+			name: 'GitHub',
+			url: 'https://github.com/xavierloeraflores/loeraflores.db',
+			icon: ProjectLinkIcon.GitHub
+		}
+	],
+	technologies: ['Drizzle', 'TypeScript', 'Node', 'mySQL', 'planetScale']
+};
 
 export const projectsData: Project[] = [
+	LoeraFloresDB,
 	Xavierslist,
 	Synema,
 	Notes,
