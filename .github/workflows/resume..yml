@@ -22,10 +22,18 @@ jobs:
     - name: Change directory
       run: cd static/files
 
+    - name: List files
+      run: ls
+
     - name: Download file
       run: |
         curl -O https://raw.githubusercontent.com/xavierloeraflores/resume/main/resume.pdf
 
+
+    - name: List files after download
+      run: ls
+      
+      
     - name: Configure Git
       run: |
         git config --global user.email "x.loera.tech@gmail.com"
