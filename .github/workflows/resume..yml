@@ -28,7 +28,7 @@ jobs:
     - name: Commit & Push changes
       uses: actions-js/push@master
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        github_token: ${{ secrets.GH_TOKEN_CLASSIC_LOERAFLORES_COM }}
 
     - name: Commit and push changes
       run: |
