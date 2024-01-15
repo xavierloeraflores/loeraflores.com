@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main
+    paths-ignore:
+    - 'static/**'
 
 jobs:
   download-file:
@@ -11,10 +13,11 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
       with:
         persists-credentials: false
         fetch-depth: 0
+        token: ${{ secrets.GH_TOKEN_CLASSIC_LOERAFLORES_COM }}
         
     - name: Change directory
       run: cd static/files
@@ -28,13 +31,9 @@ jobs:
         git config --global user.email "x.loera.tech@gmail.com"
         git config --global user.name "xavierloeraflores"
 
-    - name: Commit & Push changes
-      uses: actions-js/push@master
-      with:
-        github_token: ${{ secrets.GH_TOKEN_CLASSIC_LOERAFLORES_COM }}
 
     - name: Commit and push changes
       run: |
         git add .
         git commit -m "Downloaded file via GitHub Actions"
-        git push https://${{ secrets.GH_TOKEN_CLASSIC_LOERAFLORES_COM }}@github.com/xavierloeraflores/resume.git HEAD:main
+        git push
