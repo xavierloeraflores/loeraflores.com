@@ -1,0 +1,21 @@
+name: Download Resume
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  download-file:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Change directory
+      run: cd static/files
+
+    - name: Download file
+      run: |
+        curl -O https://raw.githubusercontent.com/xavierloeraflores/resume/main/resume.pdf
