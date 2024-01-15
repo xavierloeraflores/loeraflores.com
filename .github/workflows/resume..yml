@@ -19,19 +19,12 @@ jobs:
         fetch-depth: 0
         token: ${{ secrets.GH_TOKEN_CLASSIC_LOERAFLORES_COM }}
         
-    - name: Change directory
-      run: cd static/files
-
-    - name: List files
-      run: ls
-
-    - name: Download file
+    - name: Download Resume
       run: |
+        cd static/files
+        ls
         curl -O https://raw.githubusercontent.com/xavierloeraflores/resume/main/resume.pdf
-
-
-    - name: List files after download
-      run: ls
+        ls
       
       
     - name: Configure Git
