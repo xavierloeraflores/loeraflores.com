@@ -13,9 +13,27 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
+    - name: Check for changes in specific directory
+      run: |
+        if git diff --quiet HEAD^ HEAD src/ then
+          echo "No changes in the specified directory. Exiting."
+          exit 0
+        fi
+        
     - name: Change directory
       run: cd static/files
 
     - name: Download file
       run: |
         curl -O https://raw.githubusercontent.com/xavierloeraflores/resume/main/resume.pdf
+
+    - name: Configure Git
+      run: |
+        git config --global user.email "x.loera.tech@gmail.com"
+        git config --global user.name "xavierloeraflores"
+
+    - name: Commit and push changes
+      run: |
+        git add .
+        git commit -m "Downloaded file via GitHub Actions"
+        git push
