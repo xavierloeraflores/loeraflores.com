@@ -12,13 +12,6 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
-
-    - name: Check for changes in specific directory
-      run: |
-        if git diff --quiet HEAD^ HEAD src/ then
-          echo "No changes in the specified directory. Exiting."
-          exit 0
-        fi
         
     - name: Change directory
       run: cd static/files
