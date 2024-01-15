@@ -25,6 +25,11 @@ jobs:
         git config --global user.email "x.loera.tech@gmail.com"
         git config --global user.name "xavierloeraflores"
 
+    - name: Commit & Push changes
+      uses: actions-js/push@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+
     - name: Commit and push changes
       run: |
         git add .
