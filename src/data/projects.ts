@@ -3,7 +3,8 @@ import { ProjectLinkIcon } from '../types/project';
 
 const Notes: Project = {
 	title: 'Notes',
-	description: 'A simple note taking app built with Hugo and Markdown',
+	description:
+		'A static site built with Hugo and Markdown used for hosting my personal notes/journal entries.',
 	links: [
 		{
 			name: 'GitHub',
@@ -20,7 +21,8 @@ const Notes: Project = {
 };
 const MappyCoin: Project = {
 	title: 'MappyCoin',
-	description: 'Contracted Promotional Site for Cryptocurrency Project',
+	description:
+		'Contracted project for a promotional marketing site for cryptocurrency project built in React.',
 	links: [
 		{
 			name: 'Live',
@@ -28,11 +30,12 @@ const MappyCoin: Project = {
 			icon: ProjectLinkIcon.Live
 		}
 	],
-	technologies: ['Hugo', 'Markdown']
+	technologies: ['React', 'Sass']
 };
 const Kurios: Project = {
 	title: 'Kurios',
-	description: 'Crypto Currency Simulation Trading Dashboard',
+	description:
+		'Fullstack dashboard for crypto-currency trading featuring a real-time transaction system.',
 	links: [
 		{
 			name: 'Frontend',
@@ -71,7 +74,8 @@ const Snake: Project = {
 };
 const GitHubio: Project = {
 	title: 'GitHub.io URL Converter',
-	description: 'Get the GitHub repo URL from a GitHub.io URL',
+	description:
+		'A simple web app for quickly retrieving the GitHub repo URL from a GitHub.io URL built with Next.js.',
 	links: [
 		{
 			name: 'GitHub',
@@ -196,8 +200,9 @@ const Xavierslist: Project = {
 	technologies: ['Go', 'Fiber', 'Next.js', 'TypeScript', 'Tailwind CSS', 'Vercel']
 };
 const LoeraFloresDB: Project = {
-	title: 'LoeraFloresDB (In Progress)',
-	description: 'Drizzle project to manage multiple database projects in one planetScale database',
+	title: 'LoeraFloresDB',
+	description:
+		'Drizzle project to manage multiple database projects in one planetScale mySQL database.',
 	links: [
 		{
 			name: 'GitHub',
@@ -207,19 +212,33 @@ const LoeraFloresDB: Project = {
 	],
 	technologies: ['Drizzle', 'TypeScript', 'Node', 'mySQL', 'planetScale']
 };
+const CapybaraAuth: Project = {
+	title: 'Capybara-Auth',
+	description:
+		'Auth service using JWT and bcrypt to authenticate/authorize users for multiple projects.',
+	links: [
+		{
+			name: 'GitHub',
+			url: 'https://github.com/xavierloeraflores/capybara-auth',
+			icon: ProjectLinkIcon.GitHub
+		}
+	],
+	technologies: ['Node', 'Express', 'TypeScript', 'mySQL', 'planetScale', 'Railway']
+};
 
 export const projectsData: Project[] = [
 	LoeraFloresDB,
+	CapybaraAuth,
+	Notes,
+	Kurios,
+	MappyCoin,
+	GitHubio,
 	Xavierslist,
 	Synema,
-	Notes,
-	MappyCoin,
-	Kurios,
+	IOSTips,
+	PandoraBot,
 	Snake,
-	GitHubio,
 	SchedulingManager,
 	InventoryManager,
-	PandoraBot,
-	IOSTips,
 	Flixster
 ];
