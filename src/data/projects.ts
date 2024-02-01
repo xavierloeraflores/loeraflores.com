@@ -142,7 +142,7 @@ const IOSTips: Project = {
 	links: [
 		{
 			name: 'GitHub',
-			url: 'https://github.com:xavierloeraflores/tipIOSApp',
+			url: 'https://github.com/xavierloeraflores/tipIOSApp',
 			icon: ProjectLinkIcon.GitHub
 		}
 	],
