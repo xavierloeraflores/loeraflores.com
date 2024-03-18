@@ -225,8 +225,22 @@ const CapybaraAuth: Project = {
 	],
 	technologies: ['Node', 'Express', 'TypeScript', 'mySQL', 'planetScale', 'Railway']
 };
+const RacismDetector: Project = {
+	title: 'Racism ML Detector (In Progress)',
+	description:
+		'End to end machine learning application implemented to detect racism in social media posts using Natural Language Processing.',
+	links: [
+		{
+			name: 'GitHub',
+			url: 'https://github.com/xavierloeraflores/wgu-capstone',
+			icon: ProjectLinkIcon.GitHub
+		}
+	],
+	technologies: ['Next.js', 'TypeScript', 'FastAPI', 'SciKit Learn', 'Python', 'Vercel', 'Railway']
+};
 
 export const projectsData: Project[] = [
+	RacismDetector,
 	LoeraFloresDB,
 	CapybaraAuth,
 	Notes,
