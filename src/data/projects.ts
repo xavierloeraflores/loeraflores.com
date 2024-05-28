@@ -226,9 +226,9 @@ const CapybaraAuth: Project = {
 	technologies: ['Node', 'Express', 'TypeScript', 'mySQL', 'planetScale', 'Railway']
 };
 const RacismDetector: Project = {
-	title: 'Racism ML Detector (In Progress)',
+	title: 'ML Content Moderation System',
 	description:
-		'End to end machine learning application implemented to detect racism in social media posts using Natural Language Processing.',
+		'End to end machine learning application implemented to detect offensive content in social media posts using Natural Language Processing.',
 	links: [
 		{
 			name: 'GitHub',
