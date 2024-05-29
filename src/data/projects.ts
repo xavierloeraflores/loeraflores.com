@@ -239,7 +239,7 @@ const RacismDetector: Project = {
 	technologies: ['Next.js', 'TypeScript', 'FastAPI', 'SciKit Learn', 'Python', 'Vercel', 'Railway']
 };
 
-export const projectsData: Project[] = [
+export const allProjectsData: Project[] = [
 	RacismDetector,
 	LoeraFloresDB,
 	CapybaraAuth,
@@ -255,4 +255,12 @@ export const projectsData: Project[] = [
 	SchedulingManager,
 	InventoryManager,
 	Flixster
+];
+export const projectsData: Project[] = [
+	RacismDetector,
+	Notes,
+	Kurios,
+	MappyCoin,
+	GitHubio,
+	IOSTips
 ];
