@@ -234,6 +234,16 @@ const RacismDetector: Project = {
 			name: 'GitHub',
 			url: 'https://github.com/xavierloeraflores/wgu-capstone',
 			icon: ProjectLinkIcon.GitHub
+		},
+		{
+			name: 'Live',
+			url: 'https://wgu-capstone-xavier-loera-flores.vercel.app',
+			icon: ProjectLinkIcon.GitHub
+		},
+		{
+			name: 'API Docs',
+			url: 'https://wgu-capstone-docs.vercel.app/',
+			icon: ProjectLinkIcon.Live
 		}
 	],
 	technologies: ['Next.js', 'TypeScript', 'FastAPI', 'SciKit Learn', 'Python', 'Vercel', 'Railway']
