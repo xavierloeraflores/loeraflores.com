@@ -20,7 +20,9 @@
 			>{testimonial.name}</CardTitle
 		>
 		<CardDescription class="flex flex-row items-center justify-center ">
-			<span class="text-md mr-2 font-medium leading-none sm:text-lg">{testimonial.title}</span>
+			<span class="text-md mr-2 font-medium leading-none sm:text-lg"
+				>{testimonial.title}, {testimonial.company}</span
+			>
 		</CardDescription>
 	</CardHeader>
 	<CardContent class="items-centers flex justify-center justify-items-center"></CardContent>

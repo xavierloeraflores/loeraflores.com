@@ -35,7 +35,7 @@ const MiguelTestimonial: Testimonial = {
 		'Xavier is a great teammate and a great person with a great personality. He works hard and has great communication skills.'
 };
 
-export const shortTestimonials: Testimonial[] = [
+export const testimonialData: Testimonial[] = [
 	JeremyTestimonial,
 	MattTestimonial,
 	NathanTestimonial,
