@@ -2,22 +2,10 @@
 	import EducationCard from '$lib/components/education/education-card.svelte';
 	import { type Education } from '../../../types';
 	import { Section, Button } from '$lib';
-	import { toast } from 'svelte-sonner';
-	import {
-		Card,
-		CardContent,
-		CardTitle,
-		CardDescription,
-		CardFooter,
-		CardHeader
-	} from '$lib/components/ui/card';
 	import { GraduationCap } from 'lucide-svelte';
-	import { Separator } from '$lib/components/ui/separator';
-	import { Tabs, Trigger, Content, List } from '$lib/components/ui/tabs';
 	import * as Carousel from '$lib/components/ui/carousel';
 
 	export let educationData: Education[] = [];
-	let degreeCount = educationData.length;
 </script>
 
 <Section title="Education">

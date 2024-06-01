@@ -72,9 +72,6 @@
 						<DrawerContent class="text-lg font-bold">
 							<DrawerHeader>Menu</DrawerHeader>
 							<DrawerFooter>
-								<!-- <DrawerClose>
-                                    <a href="#about" on:click={drawerClick}>About</a>
-                                </DrawerClose> -->
 								<DrawerClose>
 									<a href="#Portfolio" on:click={drawerClick}>Portfolio</a>
 								</DrawerClose>
@@ -89,7 +86,6 @@
 				</Drawer>
 			</div>
 			<div id="desktop" class="flex flex-row justify-between">
-				<!-- <a href="#About" on:click={anchorClick} class="mx-2">About</a> -->
 				<a href="#Portfolio" on:click={anchorClick} class="mx-2">Portfolio</a>
 				<a href="#Contact" on:click={anchorClick} class="mx-2">Contact</a>
 			</div>
