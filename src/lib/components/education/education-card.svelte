@@ -28,7 +28,7 @@
 	<CardContent class="items-centers flex justify-center justify-items-center"></CardContent>
 	<Separator />
 	<CardFooter class="flex w-full flex-row justify-evenly p-4">
-		<a href="https://www.wgu.edu/" class="text-md mr-2 font-medium leading-none sm:text-lg"
+		<a href={edu.link} class="text-md mr-2 font-medium leading-none sm:text-lg" target="_blank"
 			>{edu.school}, {edu.location}</a
 		>
 	</CardFooter>
