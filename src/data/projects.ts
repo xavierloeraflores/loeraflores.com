@@ -248,6 +248,46 @@ const RacismDetector: Project = {
 	],
 	technologies: ['Next.js', 'TypeScript', 'FastAPI', 'SciKit Learn', 'Python', 'Vercel', 'Railway']
 };
+const ScamScammers: Project = {
+	title: 'ScamScanner: Scam Call Detector',
+	description:
+		'End to end multimodal AI application powered by Hume AI & Groq that detects phone frauds & scams using custom emotional intelligent LLMs.',
+	links: [
+		{
+			name: 'GitHub',
+			url: 'https://github.com/ScamScanners/ScamScanner',
+			icon: ProjectLinkIcon.GitHub
+		},
+		{
+			name: 'Live',
+			url: 'https://scam-scanner.vercel.app/',
+			icon: ProjectLinkIcon.Live
+		},
+		{
+			name: 'Video',
+			url: 'https://www.youtube.com/watch?v=NEVwVvFSi5c',
+			icon: ProjectLinkIcon.Live
+		},
+		{
+			name: 'DevPost',
+			url: 'https://devpost.com/software/scamscammer',
+			icon: ProjectLinkIcon.Live
+		}
+	],
+	technologies: [
+		'Next.js',
+		'TypeScript',
+		'Flask',
+		'Python',
+		'LLMs',
+		'Hume AI',
+		'Groq',
+		'TailwindCSS',
+		'Jupyter Notebook',
+		'Vercel',
+		'Railway'
+	]
+};
 
 export const allProjectsData: Project[] = [
 	RacismDetector,
@@ -267,10 +307,10 @@ export const allProjectsData: Project[] = [
 	Flixster
 ];
 export const projectsData: Project[] = [
+	ScamScammers,
 	RacismDetector,
 	Notes,
 	Kurios,
 	MappyCoin,
-	GitHubio,
-	IOSTips
+	GitHubio
 ];
