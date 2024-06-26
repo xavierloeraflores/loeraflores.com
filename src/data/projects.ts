@@ -2,27 +2,32 @@ import { type Project } from '../types';
 import { ProjectLinkIcon } from '../types/project';
 
 const Notes: Project = {
-	title: 'Notes',
+	title: 'Notes: Static Markdown Blog',
 	description:
-		'A static site built with Hugo and Markdown used for hosting my personal notes/journal entries.',
+		'A static site built with Hugo and Markdown used for hosting my personal notes/journal entries featuring rich markdown and MathJax rendering.',
 	links: [
 		{
 			name: 'GitHub',
-			url: '',
+			url: 'https://github.com/xavierloeraflores/notes',
+			icon: ProjectLinkIcon.GitHub
+		},
+		{
+			name: 'Entries',
+			url: 'https://github.com/xavierloeraflores/markdown-entries',
 			icon: ProjectLinkIcon.GitHub
 		},
 		{
 			name: 'Live',
-			url: '',
+			url: 'xavierloeraflores.github.io/notes/',
 			icon: ProjectLinkIcon.Live
 		}
 	],
-	technologies: ['Hugo', 'Markdown']
+	technologies: ['Hugo', 'Markdown', 'MathJax', 'JavaScript', 'HTML', 'CSS', 'GitHub Pages']
 };
 const MappyCoin: Project = {
-	title: 'MappyCoin',
+	title: 'MappyCoin: Promotional Landing Page',
 	description:
-		'Contracted project for a promotional marketing site for cryptocurrency project built in React.',
+		'Contracted project for a promotional marketing landing site for a cryptocurrency project built in React.',
 	links: [
 		{
 			name: 'Live',
@@ -33,9 +38,9 @@ const MappyCoin: Project = {
 	technologies: ['React', 'Sass']
 };
 const Kurios: Project = {
-	title: 'Kurios',
+	title: 'Kurios: Crypto Paper Trading Dashboard',
 	description:
-		'Fullstack dashboard for crypto-currency trading featuring a real-time transaction system.',
+		'Fullstack dashboard for crypto-currency paper trading featuring a real-time price data and transaction/wallet system.',
 	links: [
 		{
 			name: 'Frontend',
@@ -53,7 +58,7 @@ const Kurios: Project = {
 			icon: ProjectLinkIcon.Live
 		}
 	],
-	technologies: ['React', 'Node', 'Express', 'PostgreSQL', 'Heroku']
+	technologies: ['React', 'Node', 'Express', 'PostgreSQL', 'Cron', 'Heroku']
 };
 const Snake: Project = {
 	title: 'Snake',
@@ -246,12 +251,21 @@ const RacismDetector: Project = {
 			icon: ProjectLinkIcon.Live
 		}
 	],
-	technologies: ['Next.js', 'TypeScript', 'FastAPI', 'SciKit Learn', 'Python', 'Vercel', 'Railway']
+	technologies: [
+		'Next.js',
+		'TypeScript',
+		'FastAPI',
+		'SciKit Learn',
+		'Linear Regression',
+		'Python',
+		'Vercel',
+		'Railway'
+	]
 };
 const ScamScammers: Project = {
 	title: 'ScamScanner: Scam Call Detector',
 	description:
-		'End to end multimodal AI application powered by Hume AI & Groq that detects phone frauds & scams using custom emotional intelligent LLMs.',
+		'End to end multimodal AI application powered by Hume AI & Groq that detects phone frauds & scams using custom emotionally intelligent LLMs.',
 	links: [
 		{
 			name: 'GitHub',
