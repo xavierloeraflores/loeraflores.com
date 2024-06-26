@@ -25,7 +25,7 @@ const NathanTestimonial: Testimonial = {
 	title: 'Marketing Director',
 	company: 'MappyCoin',
 	quote:
-		'He is friendly, hard working and a wonderful asset to the team. Would strongly recommend him as an A Player'
+		'He is friendly, hard working and a wonderful asset to the team. Would strongly recommend him as an A Player.'
 };
 const MiguelTestimonial: Testimonial = {
 	name: 'Miguel Gutierrez',

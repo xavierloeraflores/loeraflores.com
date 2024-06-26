@@ -27,7 +27,7 @@
 	</CardHeader>
 	<CardContent class="items-centers flex justify-center justify-items-center"></CardContent>
 	<Separator />
-	<CardFooter class="flex w-full flex-row justify-evenly p-4">
-		<span class="text-md mr-2 font-medium leading-none sm:text-lg">{testimonial.quote}</span>
+	<CardFooter class="flex w-full flex-row justify-evenly p-4 px-10">
+		<span class="text-md mr-2 font-medium leading-none sm:text-lg">"{testimonial.quote}"</span>
 	</CardFooter>
 </Card>
