@@ -1,34 +1,53 @@
 <script lang="ts">
-    import { Section } from '$lib';
-    import Typewriter from 'svelte-typewriter'
-    import { Button, buttonVariants } from "$lib";
-    import {toast} from 'svelte-sonner'
-    import type { HTMLAttributes } from "svelte/elements";
-	import { cn } from "$lib/utils";
+	import { Section } from '$lib';
+	import Typewriter from 'svelte-typewriter';
+	import { Button, buttonVariants } from '$lib';
+	import { toast } from 'svelte-sonner';
+	import type { HTMLAttributes } from 'svelte/elements';
+	import { cn } from '$lib/utils';
 	type $$Props = HTMLAttributes<HTMLDivElement>;
-	let className: $$Props["class"] = undefined;
+	let className: $$Props['class'] = undefined;
 	export { className as class };
 
-    function calendly() {
-        window.open('https://calendly.com/xavierloeraflores/30min', '_blank')
-        toast('🎉 🎉 🎉 Opening Calendly 🎉 🎉 🎉')
-    }
-    function resume() {
-        toast('🎉 🎉 🎉 Downloading Resume 🎉 🎉 🎉')
-    }
+	function calendly() {
+		window.open('https://calendly.com/xavierloeraflores/30min', '_blank');
+		toast('🎉 🎉 🎉 Opening Calendly 🎉 🎉 🎉');
+	}
+	function resume() {
+		toast('🎉 🎉 🎉 Downloading Resume 🎉 🎉 🎉');
+	}
 </script>
+
 <Section title="">
-    <div class ={cn(
-        "p-4 h-screen justify-center flex flex-col items-center",
-        className
-        )}>
-    <span class='text-primary scroll-m-20  pb-2 text-2xl font-semibold tracking-tight first:mt-0 lg:text-4xl'>Hi, my name is</span>
-    <h1 class=' text-secondary-foreground scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-7xl'><Typewriter>Xavier Loera Flores.</Typewriter></h1>
-    <h2 class='text-accent-foreground scroll-m-20 pb-2 text-3xl font-semibold tracking-tight first:mt-0 lg:text-5xl'>I'm a Software Developer</h2>
-    <p class='text-2xl text-muted-foreground sm:w-11/12  w-2/3 mt-4 max-w-[750px] leading-7 [&:not(:first-child)]:mt-6 lg:max-w-[1200px] lg:text-3xl text-center'>I am a diligent software engineer with 2+ years of experience in automation and software development. Eager to join any team seeking to build innovative and cutting-edge business solutions for users worldwide.</p>
-    <div class='flex flex-row mt-4'>
-        <Button on:click={calendly} class='mx-4'>Get in touch</Button>
-        <a href="/files/resume.pdf" download on:click={resume} class={buttonVariants({variant:"default", size:"default"})}>Resume</a>
-    </div>  
-</div>
+	<div class={cn('flex h-screen flex-col items-center justify-center p-4', className)}>
+		<span
+			class="scroll-m-20 pb-2 text-2xl font-semibold tracking-tight text-primary first:mt-0 lg:text-4xl"
+			>Hi, my name is</span
+		>
+		<h1
+			class=" scroll-m-20 text-4xl font-extrabold tracking-tight text-secondary-foreground lg:text-7xl"
+		>
+			<Typewriter>Xavier Loera Flores</Typewriter>
+		</h1>
+		<h2
+			class="scroll-m-20 pb-2 text-3xl font-semibold tracking-tight text-accent-foreground first:mt-0 lg:text-5xl"
+		>
+			I write software.
+		</h2>
+		<p
+			class="mt-4 w-2/3 max-w-[750px] text-center text-2xl leading-7 text-muted-foreground sm:w-11/12 lg:max-w-[1200px] lg:text-3xl [&:not(:first-child)]:mt-6"
+		>
+			I am a diligent software engineer with 3+ years of experience. Eager to join any team seeking
+			to build innovative and cutting-edge solutions for people worldwide.
+		</p>
+		<div class="mt-4 flex flex-row">
+			<Button on:click={calendly} class="mx-4">Get in touch</Button>
+			<a
+				href="/files/resume.pdf"
+				download
+				on:click={resume}
+				class={buttonVariants({ variant: 'default', size: 'default' })}>Resume</a
+			>
+		</div>
+	</div>
 </Section>
