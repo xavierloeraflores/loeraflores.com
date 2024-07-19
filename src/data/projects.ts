@@ -269,7 +269,7 @@ const ScamScammers: Project = {
 	links: [
 		{
 			name: 'GitHub',
-			url: 'https://github.com/ScamScanners/ScamScanner',
+			url: 'https://github.com/ScamScanners',
 			icon: ProjectLinkIcon.GitHub
 		},
 		{
