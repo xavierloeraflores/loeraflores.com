@@ -1,4 +1,13 @@
 import { type Education } from '../types';
+
+const WGU2: Education = {
+	school: 'Western Governors University',
+	degree: 'M.S. Data Analytics - Data Science',
+	dates: '2024 - 2025',
+	location: 'Millcreek UT',
+	link: 'https://www.wgu.edu/',
+	tab: 'MS DS'
+};
 const WGU: Education = {
 	school: 'Western Governors University',
 	degree: 'B.S. Computer Science',
@@ -41,4 +50,4 @@ const MS: Education = {
 	tab: 'AA'
 };
 
-export const educationData: Education[] = [WGU, SJSU, CIS, CodePath, MS];
+export const educationData: Education[] = [WGU2, WGU, SJSU, CIS, CodePath, MS];
