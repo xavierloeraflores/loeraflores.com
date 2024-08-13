@@ -21,7 +21,7 @@
 		toast('🎉 🎉 🎉 Downloading Resume 🎉 🎉 🎉');
 	}
 	function copy() {
-		const email = 'xavier@loeraflores.tech';
+		const email = 'xavier@loeraflores.com';
 		navigator.clipboard
 			.writeText(email)
 			.then(() => {
@@ -42,8 +42,8 @@
 				>Let's Get In Touch
 			</CardTitle>
 			<CardDescription class="flex flex-row items-center justify-center ">
-				<a href="mailto:xavier@loeraflores.tech" class="mr-2 text-lg font-medium leading-none"
-					>xavier@loeraflores.tech</a
+				<a href="mailto:xavier@loeraflores.com" class="mr-2 text-lg font-medium leading-none"
+					>xavier@loeraflores.com</a
 				>
 				<Button on:click={copy} variant="outline"><Copy /></Button>
 			</CardDescription>
