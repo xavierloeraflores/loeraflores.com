@@ -4,7 +4,7 @@
 </script>
 
 <main class="">
-	<Particles />
+	<Particles class="blur" />
 	<Hero />
 	<Portfolio projects={projectsData} />
 	<Education {educationData} />
