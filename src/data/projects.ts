@@ -303,7 +303,50 @@ const ScamScammers: Project = {
 	]
 };
 
+const CustodiaAI: Project = {
+	title: 'Custodia AI: Your personal AI voice assistant',
+	description:
+		'End to end multimodal AI voice assistant that can make outgoing calls to customer service centers on your behalf.',
+	links: [
+		{
+			name: 'GitHub',
+			url: 'https://github.com/ScamScanners',
+			icon: ProjectLinkIcon.GitHub
+		},
+		{
+			name: 'Live',
+			url: 'https://www.custodia.life',
+			icon: ProjectLinkIcon.Live
+		},
+		{
+			name: 'Pitch',
+			url: 'https://x.com/AlexReibman/status/1815535595961426244',
+			icon: ProjectLinkIcon.Live
+		},
+		{
+			name: 'Demo',
+			url: 'https://www.youtube.com/clip/Ugkx6VVcSpIwEmEWlCcyHHfajpCorLnd7QPm',
+			icon: ProjectLinkIcon.Live
+		}
+	],
+	technologies: [
+		'Next.js',
+		'TypeScript',
+		'Flask',
+		'Python',
+		'LLMs',
+		'Hume AI',
+		'Groq',
+		'Llama 3',
+		'TailwindCSS',
+		'Vercel',
+		'Railway'
+	]
+};
+
 export const allProjectsData: Project[] = [
+	CustodiaAI,
+	ScamScammers,
 	RacismDetector,
 	LoeraFloresDB,
 	CapybaraAuth,
@@ -321,10 +364,11 @@ export const allProjectsData: Project[] = [
 	Flixster
 ];
 export const projectsData: Project[] = [
+	CustodiaAI,
 	ScamScammers,
 	RacismDetector,
 	Notes,
 	Kurios,
-	MappyCoin,
+	// MappyCoin,
 	GitHubio
 ];
