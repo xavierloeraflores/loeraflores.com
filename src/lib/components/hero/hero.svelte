@@ -37,8 +37,10 @@
 		<p
 			class="mt-4 w-2/3 max-w-[750px] text-center text-2xl leading-7 text-muted-foreground sm:w-11/12 lg:max-w-[1200px] lg:text-3xl [&:not(:first-child)]:mt-6"
 		>
-			I am a diligent software engineer with 3+ years of experience. Eager to join any team seeking
-			to build innovative and cutting-edge solutions for people worldwide.
+			I am a versatile software engineer and AI innovator, with 3+ years of experience and expertise
+			in building scalable, AI-driven platforms. As the co-founder and CTO of Custodia AI, I worked
+			on the creation of award-winning applications and empowered small businesses with custom AI
+			solutions.
 		</p>
 		<div class="mt-4 flex flex-row">
 			<Button on:click={calendly} class="mx-4">Get in touch</Button>
