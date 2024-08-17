@@ -230,7 +230,7 @@ const CapybaraAuth: Project = {
 	],
 	technologies: ['Node', 'Express', 'TypeScript', 'mySQL', 'planetScale', 'Railway']
 };
-const RacismDetector: Project = {
+const MLContentModeration: Project = {
 	title: 'ML Content Moderation System',
 	description:
 		'End to end machine learning application implemented to detect offensive content in social media posts using Natural Language Processing.',
@@ -256,7 +256,7 @@ const RacismDetector: Project = {
 		'TypeScript',
 		'FastAPI',
 		'SciKit Learn',
-		'Linear Regression',
+		'Logistic Regression',
 		'Python',
 		'Vercel',
 		'Railway'
@@ -347,7 +347,7 @@ const CustodiaAI: Project = {
 export const allProjectsData: Project[] = [
 	CustodiaAI,
 	ScamScammers,
-	RacismDetector,
+	MLContentModeration,
 	LoeraFloresDB,
 	CapybaraAuth,
 	Notes,
@@ -366,7 +366,7 @@ export const allProjectsData: Project[] = [
 export const projectsData: Project[] = [
 	CustodiaAI,
 	ScamScammers,
-	RacismDetector,
+	MLContentModeration,
 	Notes,
 	Kurios,
 	// MappyCoin,
