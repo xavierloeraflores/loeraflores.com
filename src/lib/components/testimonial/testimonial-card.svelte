@@ -13,7 +13,7 @@
 	export let testimonial: Testimonial;
 </script>
 
-<Card class="bg-background">
+<Card class="m-2 bg-background shadow-md shadow-primary lg:shadow-lg lg:shadow-primary">
 	<CardHeader class="flex items-center justify-center justify-items-center align-middle">
 		<CardTitle
 			class="scroll-m-20 pb-2  text-xl font-semibold tracking-tight text-primary first:mt-0 sm:text-2xl"
