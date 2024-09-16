@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Hero, Particles, Portfolio, Contact, Education, Testimonial } from '$lib';
+	import { Hero, Particles, Portfolio, Contact, Education, Testimonial, Skills } from '$lib';
 	import { projectsData, educationData, testimonialData } from '../data';
 </script>
 
@@ -8,6 +8,7 @@
 	<Hero />
 	<Portfolio projects={projectsData} />
 	<Education {educationData} />
+	<!-- <Skills /> -->
 	<Testimonial {testimonialData} />
 	<Contact />
 </main>
