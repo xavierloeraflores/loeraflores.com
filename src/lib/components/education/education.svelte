@@ -1,7 +1,7 @@
 <script lang="ts">
 	import EducationCard from '$lib/components/education/education-card.svelte';
 	import { type Education } from '../../../types';
-	import { Section, Button } from '$lib';
+	import { Section } from '$lib';
 	import { GraduationCap } from 'lucide-svelte';
 	import * as Carousel from '$lib/components/ui/carousel';
 
@@ -10,10 +10,10 @@
 
 <Section title="Education">
 	<GraduationCap size="64" class="color-primary-foreground my-4" />
-	<Carousel.Root class="w-3/4 min-w-[200px] max-w-[900px] sm:w-full sm:min-w-[500px]">
+	<Carousel.Root class="w-3/4 min-w-[200px] max-w-[800px] sm:min-w-[500px]">
 		<Carousel.Content>
 			{#each educationData as edu}
-				<Carousel.Item class="">
+				<Carousel.Item class="px-8 py-12">
 					<EducationCard {edu} />
 				</Carousel.Item>
 			{/each}
