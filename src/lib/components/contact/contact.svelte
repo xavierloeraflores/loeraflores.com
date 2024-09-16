@@ -35,7 +35,7 @@
 
 <Section title="Contact" class="flex-col content-center items-center justify-center align-middle">
 	<AtSign size="64" class="color-primary-foreground my-4" />
-	<Card class="max-w-[750px]  shadow-lg ">
+	<Card class="max-w-[750px] shadow-md shadow-primary lg:shadow-lg lg:shadow-primary">
 		<CardHeader class="flex items-center justify-center justify-items-center align-middle">
 			<CardTitle
 				class="scroll-m-20 pb-2  text-2xl font-semibold tracking-tight text-foreground first:mt-0"

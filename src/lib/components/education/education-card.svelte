@@ -1,35 +1,42 @@
 <script lang="ts">
 	import { type Education } from '../../../types';
-	import { toast } from 'svelte-sonner';
-	import {
-		Card,
-		CardContent,
-		CardTitle,
-		CardDescription,
-		CardFooter,
-		CardHeader
-	} from '$lib/components/ui/card';
+	import { Card, CardContent, CardTitle, CardDescription } from '$lib/components/ui/card';
 	import { GraduationCap } from 'lucide-svelte';
-	import { Separator } from '$lib/components/ui/separator';
 
 	export let edu: Education;
 </script>
 
-<Card class="bg-background">
-	<CardHeader class="flex items-center justify-center justify-items-center align-middle">
-		<CardTitle
-			class="scroll-m-20 pb-2  text-xl font-semibold tracking-tight text-primary first:mt-0 sm:text-2xl"
-			>{edu.degree}</CardTitle
-		>
-		<CardDescription class="flex flex-row items-center justify-center ">
-			<span class="text-md mr-2 font-medium leading-none sm:text-lg">{edu.dates}</span>
-		</CardDescription>
-	</CardHeader>
-	<CardContent class="items-centers flex justify-center justify-items-center"></CardContent>
-	<Separator />
-	<CardFooter class="flex w-full flex-row justify-evenly p-4">
-		<a href={edu.link} class="text-md mr-2 font-medium leading-none sm:text-lg" target="_blank"
-			>{edu.school}, {edu.location}</a
-		>
-	</CardFooter>
+<Card
+	class="m-2 flex h-40 flex-row items-center bg-background shadow-md shadow-primary lg:shadow-lg lg:shadow-primary"
+>
+	<div id="image" class="ml-2 mr-8 md:ml-8">
+		{#if edu.imageUrl}
+			<img
+				src={edu.imageUrl}
+				alt={edu.school}
+				class="h-16 w-16 object-contain sm:h-20 sm:w-20 md:h-24 md:w-24"
+			/>
+		{:else}
+			<GraduationCap class="h-16 w-16 text-primary sm:h-20 sm:w-20 md:h-24 md:w-24" />
+		{/if}
+	</div>
+
+	<CardContent class="flex flex-col items-center justify-center justify-items-center">
+		<div class="mt-2 flex flex-col justify-start">
+			<CardTitle
+				class="scroll-m-20 text-xl font-semibold tracking-tight text-primary sm:text-2xl md:pt-1 lg:text-3xl"
+			>
+				{edu.degree}
+			</CardTitle>
+
+			<CardDescription class="items-left justify-left mb-1 flex flex-col">
+				<span class="text-md mr-2 font-medium leading-none md:text-lg">{edu.dates}</span>
+			</CardDescription>
+			<a
+				href={edu.link}
+				class="text-md font-medium leading-none hover:underline md:text-lg"
+				target="_blank">{edu.school}<span class="hidden md:inline">, {edu.location}</span></a
+			>
+		</div>
+	</CardContent>
 </Card>

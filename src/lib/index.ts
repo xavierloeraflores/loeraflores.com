@@ -11,6 +11,7 @@ import { Portfolio } from './components/portfolio';
 import { Contact } from './components/contact';
 import { Education } from './components/education';
 import { Testimonial } from './components/testimonial';
+import { Skills } from './components/skills';
 
 export {
 	Hero,
@@ -29,5 +30,6 @@ export {
 	Portfolio,
 	Contact,
 	Education,
-	Testimonial
+	Testimonial,
+	Skills
 };

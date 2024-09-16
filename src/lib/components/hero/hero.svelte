@@ -43,12 +43,15 @@
 			solutions.
 		</p>
 		<div class="mt-4 flex flex-row">
-			<Button on:click={calendly} class="mx-4">Get in touch</Button>
+			<Button on:click={calendly} class="mx-4 shadow-md shadow-primary/20">Get in touch</Button>
 			<a
 				href="/files/resume.pdf"
 				download
 				on:click={resume}
-				class={buttonVariants({ variant: 'default', size: 'default' })}>Resume</a
+				class={cn(
+					buttonVariants({ variant: 'default', size: 'default' }),
+					'shadow-md shadow-primary/20'
+				)}>Resume</a
 			>
 		</div>
 	</div>

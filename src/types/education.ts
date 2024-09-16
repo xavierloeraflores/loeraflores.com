@@ -5,4 +5,5 @@ export type Education = {
 	location: string;
 	link: string;
 	tab: string;
+	imageUrl?: string;
 };

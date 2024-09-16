@@ -20,7 +20,7 @@
 	<section
 		id={title}
 		class={cn(
-			'flex min-h-96 w-screen flex-col items-center overflow-hidden pb-10 md:overflow-visible',
+			'mb-24 flex min-h-96 w-screen flex-col items-center overflow-hidden pb-10 md:overflow-visible lg:mb-32',
 			className
 		)}
 	>

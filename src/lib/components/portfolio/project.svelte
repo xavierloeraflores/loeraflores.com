@@ -28,7 +28,7 @@
 
 <Card
 	class={cn(
-		'flex w-96 flex-col justify-between rounded-lg border bg-card text-card-foreground shadow-lg',
+		'flex w-96 flex-col justify-between rounded-lg border bg-card text-card-foreground shadow-md shadow-primary lg:shadow-lg lg:shadow-primary',
 		className
 	)}
 >

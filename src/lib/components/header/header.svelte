@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { buttonVariants } from '$lib';
-	import { Menu } from 'lucide-svelte';
+	import { Menu, X } from 'lucide-svelte';
 	import {
 		Drawer,
 		DrawerTrigger,
@@ -52,12 +52,12 @@
 
 <header
 	class={cn(
-		'fixed top-0 z-50 flex w-full flex-row justify-between bg-foreground p-4 pb-5 text-4xl text-primary',
+		'fixed top-0 z-50 flex w-full flex-row justify-between bg-foreground/95 p-4 py-5 text-3xl text-primary lg:text-4xl',
 		className
 	)}
 >
 	<div id="left">
-		<a href="/">&lt;🌹&gt;</a>
+		<a href="/" class="hover:text-accent">&lt;🌹&gt;</a>
 	</div>
 	<div id="right" class="flex flex-row">
 		<div id="nav">
@@ -78,7 +78,9 @@
 								<DrawerClose>
 									<a href="#Contact" on:click={drawerClick}>Contact</a>
 								</DrawerClose>
-								<DrawerClose>❌</DrawerClose>
+								<DrawerClose class="flex justify-center"
+									><X class=" h-[1.5rem] w-[1.5rem] divide-primary text-primary" /></DrawerClose
+								>
 							</DrawerFooter>
 						</DrawerContent>
 					</DrawerPortal>
@@ -86,8 +88,12 @@
 				</Drawer>
 			</div>
 			<div id="desktop" class="flex flex-row justify-between">
-				<a href="#Portfolio" on:click={anchorClick} class="mx-2">Portfolio</a>
-				<a href="#Contact" on:click={anchorClick} class="mx-2">Contact</a>
+				<a href="#Portfolio" on:click={anchorClick} class="mx-2 hover:text-accent hover:underline"
+					>Portfolio</a
+				>
+				<a href="#Contact" on:click={anchorClick} class="mx-2 hover:text-accent hover:underline"
+					>Contact</a
+				>
 			</div>
 		</div>
 		<Lightswitch />

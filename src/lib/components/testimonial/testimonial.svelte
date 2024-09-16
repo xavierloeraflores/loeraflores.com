@@ -11,10 +11,10 @@
 <Section title="Testimonials">
 	<BadgeCheck size="64" class="color-primary-foreground my-4" />
 
-	<Carousel.Root class="w-3/4 min-w-[200px] max-w-[900px] sm:w-full sm:min-w-[500px]">
+	<Carousel.Root class="w-3/4 min-w-[200px] max-w-[800px] sm:min-w-[500px]">
 		<Carousel.Content>
 			{#each testimonialData as testimonial}
-				<Carousel.Item class="">
+				<Carousel.Item class="px-8 py-12">
 					<TestimonialCard {testimonial} />
 				</Carousel.Item>
 			{/each}
