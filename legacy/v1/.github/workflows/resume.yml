@@ -1,0 +1,41 @@
+name: Download Resume
+
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - 'static/**'
+
+jobs:
+  download-file:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+          token: ${{ secrets.GH_TOKEN_CLASSIC_LOERAFLORES_COM }}
+
+      - name: Download Resume
+        run: |
+          cd static/files
+          ls
+          rm -rf resume.pdf
+          curl -O https://raw.githubusercontent.com/xavierloeraflores/resume/main/resume.pdf
+          ls
+
+      - name: Configure Git
+        run: |
+          git config --global user.email "x.loera.tech@gmail.com"
+          git config --global user.name "xavierloeraflores"
+
+      - name: Commit and push changes
+        run: |
+          ls
+          git status
+          git add .
+          git commit -m "Downloaded file via GitHub Actions"
+          git push
