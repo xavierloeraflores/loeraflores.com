@@ -1,0 +1,1 @@
+This directory contains all legacy versions of my personal website. 
