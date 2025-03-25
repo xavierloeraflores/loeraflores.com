@@ -34,8 +34,8 @@ export default function RootLayout({
         >
           <Header />
           <TRPCReactProvider>{children}</TRPCReactProvider>
+          <DotPattern className="fixed -z-10 h-full w-full" />
           <Footer />
-          <DotPattern className="fixed inset-0 h-full w-full" />
           <ThemeModeToggle className="fixed right-4 bottom-4 h-12 w-12" />
         </ThemeProvider>
       </body>
