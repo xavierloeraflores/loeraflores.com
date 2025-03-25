@@ -3,8 +3,9 @@ import "~/styles/globals.css";
 import { DotPattern } from "~/components/magicui/dot-pattern";
 import { type Metadata } from "next";
 import { Geist } from "next/font/google";
-
 import { TRPCReactProvider } from "~/trpc/react";
+import Header from "~/components/header";
+import Footer from "~/components/footer";
 
 export const metadata: Metadata = {
   title: "Create T3 App",
@@ -23,8 +24,10 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${geist.variable}`}>
       <body>
+        <Header />
         <TRPCReactProvider>{children}</TRPCReactProvider>
-        <DotPattern className="absolute inset-0 h-full w-full" />
+        <Footer />
+        <DotPattern className="fixed inset-0 h-full w-full" />
       </body>
     </html>
   );
