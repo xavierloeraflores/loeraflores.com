@@ -13,6 +13,7 @@ export const metadata: Metadata = {
     "Welcome to my website. I'm a software engineer and a full stack developer.",
   icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
+import { ThemeModeToggle } from "~/components/ui/theme-mode-toggle";
 
 const geist = Geist({
   subsets: ["latin"],
@@ -35,6 +36,7 @@ export default function RootLayout({
           <TRPCReactProvider>{children}</TRPCReactProvider>
           <Footer />
           <DotPattern className="fixed inset-0 h-full w-full" />
+          <ThemeModeToggle className="fixed right-4 bottom-4 h-12 w-12" />
         </ThemeProvider>
       </body>
     </html>
