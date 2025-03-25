@@ -5,6 +5,8 @@
     },
     "files.exclude": {
         "**/README.md": true,
+        "v0/**": true,
+        "v1/**": false,
         "**/excluded/**": true
     }
 }
