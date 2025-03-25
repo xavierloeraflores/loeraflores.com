@@ -1,5 +1,6 @@
 import "~/styles/globals.css";
 
+import { DotPattern } from "~/components/magicui/dot-pattern";
 import { type Metadata } from "next";
 import { Geist } from "next/font/google";
 
@@ -23,6 +24,7 @@ export default function RootLayout({
     <html lang="en" className={`${geist.variable}`}>
       <body>
         <TRPCReactProvider>{children}</TRPCReactProvider>
+        <DotPattern className="absolute inset-0 h-full w-full" />
       </body>
     </html>
   );
