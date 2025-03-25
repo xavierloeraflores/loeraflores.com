@@ -6,7 +6,7 @@ import { Geist } from "next/font/google";
 import { TRPCReactProvider } from "~/trpc/react";
 import Header from "~/components/header";
 import Footer from "~/components/footer";
-
+import { ThemeProvider } from "~/providers/theme-provider";
 export const metadata: Metadata = {
   title: "Xavier Loera Flores",
   description:
@@ -25,10 +25,17 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${geist.variable}`}>
       <body>
-        <Header />
-        <TRPCReactProvider>{children}</TRPCReactProvider>
-        <Footer />
-        <DotPattern className="fixed inset-0 h-full w-full" />
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Header />
+          <TRPCReactProvider>{children}</TRPCReactProvider>
+          <Footer />
+          <DotPattern className="fixed inset-0 h-full w-full" />
+        </ThemeProvider>
       </body>
     </html>
   );
