@@ -1,0 +1,10 @@
+{
+    "cSpell.words": [""],
+    "[prisma]": {
+        "editor.defaultFormatter": "Prisma.prisma"
+    },
+    "files.exclude": {
+        "**/README.md": true,
+        "**/excluded/**": true
+    }
+}
