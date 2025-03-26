@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
+import { FaGithub, FaLinkedin, FaXTwitter, FaBluesky } from "react-icons/fa6";
 
 export default function Footer() {
   return (
@@ -13,6 +13,9 @@ export default function Footer() {
         </Link>
         <Link href="https://www.linkedin.com/in/xavierloeraflores/">
           <FaLinkedin className="h-6 w-6" />
+        </Link>
+        <Link href="https://bsky.app/profile/loeraflores.com">
+          <FaBluesky className="h-6 w-6" />
         </Link>
         <Link href="https://x.com/TheLoeraFlores ">
           <FaXTwitter className="h-6 w-6" />
