@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { FaGithub, FaLinkedin, FaXTwitter, FaBluesky } from "react-icons/fa6";
+import { Separator } from "./ui/separator";
 
 export default function Footer() {
   return (
@@ -21,7 +22,7 @@ export default function Footer() {
           <FaXTwitter className="h-6 w-6" />
         </Link>
       </div>
-
+      <Separator />
       <p className="text-muted-foreground w-full text-center text-sm">
         &copy; {2025} Xavier Loera Flores. All rights reserved.
       </p>
