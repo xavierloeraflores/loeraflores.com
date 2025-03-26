@@ -26,14 +26,23 @@ export default function Testimonials() {
 
 const TestimonialUI = ({ testimonial }: { testimonial: Testimonial }) => {
   return (
-    <Card className="w-64">
-      <CardHeader className="flex flex-row gap-2">
-        <Avatar>
+    <Card className="w-96">
+      <CardHeader className="flex flex-row items-center gap-4">
+        <Avatar className="h-16 w-16">
           <AvatarImage src={testimonial.image} />
           <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
         </Avatar>
         <div>
-          <CardTitle>{testimonial.name}</CardTitle>
+          <CardTitle>
+            <a
+              href={testimonial.linkedin}
+              target="_blank"
+              rel="noreferrer"
+              className="hover:underline"
+            >
+              {testimonial.name}
+            </a>
+          </CardTitle>
           <CardDescription>{testimonial.title}</CardDescription>
         </div>
       </CardHeader>
