@@ -29,7 +29,7 @@ export const testimonials: Testimonial[] = [
     title: "Marketing Director",
     company: "MappyCoin",
     text: "He is friendly, hard working and a wonderful asset to the team. Would strongly recommend him as an A Player.",
-    image: "https://github.com/shadcn.png",
+    image: "/images/testimonials/nathan.jpeg",
     linkedin: "https://www.linkedin.com/in/realnathanpeters/",
   },
   {
