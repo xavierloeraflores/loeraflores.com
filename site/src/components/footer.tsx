@@ -4,7 +4,7 @@ import { Separator } from "./ui/separator";
 
 export default function Footer() {
   return (
-    <footer className="bg-background z-10 flex h-24 w-full flex-col gap-4 pt-4">
+    <footer className="bg-background z-10 mt-16 flex min-h-24 w-full flex-col gap-4 py-8">
       <div
         id="footer-socials"
         className="flex items-center justify-center gap-4"
