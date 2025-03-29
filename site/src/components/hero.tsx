@@ -2,6 +2,7 @@ import { BoxReveal } from "./magicui/box-reveal";
 import { buttonVariants } from "./ui/button";
 import Link from "next/link";
 import { cn } from "~/lib/utils";
+import { HighlightText } from "./highlight";
 export default function Hero() {
   return (
     <div className="relative flex h-screen w-full flex-col items-center justify-center overflow-hidden">
@@ -44,8 +45,4 @@ export default function Hero() {
       </BoxReveal>
     </div>
   );
-}
-
-function HighlightText({ children }: { children: React.ReactNode }) {
-  return <span className="text-[#5046e6]">{children}</span>;
 }
