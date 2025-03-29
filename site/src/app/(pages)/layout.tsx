@@ -7,6 +7,7 @@ import { TRPCReactProvider } from "~/trpc/react";
 import Header from "~/components/header";
 import Footer from "~/components/footer";
 import { ThemeProvider } from "~/providers/theme-provider";
+import { Toaster } from "~/components/ui/sonner";
 export const metadata: Metadata = {
   title: "Xavier Loera Flores",
   description:
@@ -36,6 +37,7 @@ export default function RootLayout({
           <DotPattern className="fixed -z-10 h-full w-full" />
           <Footer />
           <ThemeModeToggle className="fixed right-4 bottom-4 h-12 w-12" />
+          <Toaster />
         </ThemeProvider>
       </body>
     </html>
