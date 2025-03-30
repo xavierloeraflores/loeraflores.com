@@ -1,12 +1,12 @@
 {
-    "cSpell.words": [""],
-    "[prisma]": {
-        "editor.defaultFormatter": "Prisma.prisma"
-    },
-    "files.exclude": {
-        "**/README.md": true,
-        "v0/**": true,
-        "v1/**": true,
-        "**/excluded/**": true
-    }
+  "cSpell.words": [""],
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
+  "files.exclude": {
+    "**/README.md": true,
+    "legacy/v0/**": true,
+    "legacy/v1/**": true,
+    "**/excluded/**": true
+  }
 }
