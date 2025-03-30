@@ -11,7 +11,8 @@ import { testimonials, type Testimonial } from "~/constants/testimonials";
 
 export default function Testimonials() {
   return (
-    <div className="w-full">
+    <section className="flex w-full flex-col items-center">
+      <h2 className="text-2xl font-bold">Testimonials</h2>
       <Marquee pauseOnHover>
         {testimonials.map((testimonial, index) => (
           <TestimonialUI
@@ -20,7 +21,7 @@ export default function Testimonials() {
           />
         ))}
       </Marquee>
-    </div>
+    </section>
   );
 }
 
