@@ -4,7 +4,7 @@ import Contact from "~/components/contact";
 import Projects from "~/components/projects";
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col gap-8">
+    <main className="flex min-h-screen flex-col gap-32">
       <Hero />
       <Projects />
       <Testimonials />
