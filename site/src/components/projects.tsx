@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "~/components/ui/card";
-import { Separator } from "./ui/separator";
 import { Badge } from "./ui/badge";
 import { projects, type Project } from "~/constants/projects";
 import Link from "next/link";
@@ -20,7 +19,7 @@ export default function Projects() {
 
 function ProjectCard({ project }: { readonly project: Project }) {
   return (
-    <Link href={project.link} target="_blank">
+    <Link href={`/projects/${project.id}`} target="_blank">
       <Card className="flex w-96 flex-col gap-2 overflow-hidden pt-0">
         <div className="relative h-48 w-full">
           <Image
@@ -31,16 +30,14 @@ function ProjectCard({ project }: { readonly project: Project }) {
           />
         </div>
         <CardHeader>
-          <CardTitle>{project.title}</CardTitle>
+          <CardTitle className="text-lg">{project.title}</CardTitle>
+        </CardHeader>
+        <CardContent>
           <div className="flex flex-wrap gap-2">
             {project.tags.map((tag) => (
               <Badge key={tag}>{tag}</Badge>
             ))}
           </div>
-        </CardHeader>
-        <Separator />
-        <CardContent>
-          <p>{project.description}</p>
         </CardContent>
       </Card>
     </Link>
