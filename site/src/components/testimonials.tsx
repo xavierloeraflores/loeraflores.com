@@ -11,7 +11,7 @@ import { testimonials, type Testimonial } from "~/constants/testimonials";
 
 export default function Testimonials() {
   return (
-    <section className="flex w-full flex-col items-center">
+    <section className="flex w-full flex-col items-center overflow-x-hidden">
       <h2 className="text-2xl font-bold">Testimonials</h2>
       <Marquee pauseOnHover>
         {testimonials.map((testimonial, index) => (
