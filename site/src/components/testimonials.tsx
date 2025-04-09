@@ -13,7 +13,7 @@ export default function Testimonials() {
   return (
     <section className="flex w-full flex-col items-center overflow-x-hidden">
       <h2 className="text-2xl font-bold">Testimonials</h2>
-      <Marquee pauseOnHover>
+      <Marquee pauseOnHover className="[--duration:15s]">
         {testimonials.map((testimonial, index) => (
           <TestimonialUI
             key={testimonial.name + index}
