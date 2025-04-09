@@ -27,7 +27,7 @@ export default function Projects() {
 function ProjectCard({ project }: { readonly project: Project }) {
   return (
     <Link href={`/projects/${project.id}`}>
-      <Card className="flex w-96 flex-col gap-2 overflow-hidden pt-0 hover:shadow-md">
+      <Card className="flex w-96 flex-col gap-2 overflow-hidden pt-0 hover:shadow-md hover:dark:shadow-white/10">
         <CardHeader className="gap-0 p-0">
           <div className="relative h-48 w-full">
             <Image
