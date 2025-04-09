@@ -29,6 +29,22 @@ const momopromo: Project = {
   tags: ["Next.js", "MongoDB", "Tailwind CSS"],
 };
 
+const propslab: Project = {
+  id: "propslab",
+  title: "PropsLab",
+  description:
+    "A contracted promotional landing site for a sports betting company built in Next.js.",
+  image: "/images/projects/propslab.png",
+  links: [
+    {
+      name: "Live",
+      url: "https://www.propslab.io",
+      icon: "site",
+    },
+  ],
+  tags: ["Next.js", "MongoDB", "Tailwind CSS"],
+};
+
 const mappy: Project = {
   id: "mappy",
   title: "MappyCoin",
@@ -104,7 +120,7 @@ const content_moderation: Project = {
   id: "content",
   title: "ML Content Moderation System",
   description:
-    "End to end machine learning application implemented to detect offensive content in social media posts using Natural Language Processing.",
+    "End to end machine learning application implemented to detect offensive content in social media posts using Natural Language Processing. This is the final capstone project for my Bachelor's of Science in Computer Science.",
   image: "/images/projects/moderation.png",
   links: [
     {
@@ -145,7 +161,7 @@ const notes: Project = {
     },
     {
       name: "Live",
-      url: "xavierloeraflores.github.io/notes/",
+      url: "https://notes.loeraflores.com",
       icon: "site",
     },
   ],
@@ -180,7 +196,8 @@ const kurios: Project = {
 const github_url_converter: Project = {
   id: "github-url-converter",
   title: "Github URL Converter",
-  description: "Description 7",
+  description:
+    "A simple tool built to convert Github.io URLS to their repo URLs. Developed when I was mentoring engineering students and would need to grade their submission assignments.",
   image: "/images/projects/github.png",
   links: [
     {
@@ -204,6 +221,7 @@ export const projects: Project[] = [
   content_moderation,
   notes,
   kurios,
+  propslab,
   mappy,
   github_url_converter,
 ];
