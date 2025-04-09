@@ -13,7 +13,9 @@ export default function Contact() {
   return (
     <div className="flex items-center gap-2">
       <h3 className="text-lg">
-        <Link href="mailto:xavier@loeraflores.com">xavier@loeraflores.com</Link>
+        <Link href="mailto:xavier@loeraflores.com" className="hover:underline">
+          xavier@loeraflores.com
+        </Link>
       </h3>
       <Button
         variant="outline"
