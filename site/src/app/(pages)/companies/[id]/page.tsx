@@ -30,7 +30,6 @@ export default async function ProjectPage({
 
   return (
     <main className="flex min-h-screen flex-col items-center gap-4 p-4">
-      {/* Back Button */}
       <Link
         href="/"
         className="text-muted-foreground hover:text-foreground mb-4 flex items-center"
@@ -61,13 +60,12 @@ function CompanyHeader({
   return (
     <div className="mb-8">
       <div className="flex flex-col gap-6 md:flex-row md:items-center">
-        <div className="flex-shrink-0">
+        <div className="relative h-full min-h-32 min-w-64">
           <Image
-            src={logo || "/placeholder.svg"}
+            src={logo}
             alt={`${name} logo`}
-            width={80}
-            height={80}
-            className="rounded-md border"
+            className="rounded-md object-contain drop-shadow-[0_0px_3px_rgba(0,0,0,0.8)] dark:drop-shadow-[0_0px_3px_rgba(255,255,255,1)]"
+            fill
           />
         </div>
         <div>
