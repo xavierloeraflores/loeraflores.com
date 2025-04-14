@@ -126,28 +126,50 @@ function CompanyRole({
             </div>
           </div>
           <div className="space-y-4">
-            <div>
-              <h4 className="mb-2 font-medium">Responsibilities</h4>
-              <ul className="text-muted-foreground list-disc space-y-1 pl-5">
-                {responsibilities.map((responsibility, index) => (
-                  <li key={index}>{responsibility}</li>
-                ))}
-              </ul>
-            </div>
-            <div>
-              <h4 className="mb-2 font-medium">Technologies Used</h4>
-              <div className="flex flex-wrap gap-2">
-                {technologies.map((tech, index) => (
-                  <Badge key={index} variant="secondary">
-                    {tech}
-                  </Badge>
-                ))}
-              </div>
-            </div>
+            {responsibilities.length > 0 && (
+              <CompanyRoleResponsibilities
+                responsibilities={responsibilities}
+              />
+            )}
+            {technologies.length > 0 && (
+              <CompanyRoleTechnologies technologies={technologies} />
+            )}
           </div>
         </CardContent>
       </Card>
     </section>
+  );
+}
+
+function CompanyRoleTechnologies({ technologies }: { technologies: string[] }) {
+  return (
+    <div>
+      <h4 className="mb-2 font-medium">Technologies Used</h4>
+      <div className="flex flex-wrap gap-2">
+        {technologies.map((tech, index) => (
+          <Badge key={index} variant="secondary">
+            {tech}
+          </Badge>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function CompanyRoleResponsibilities({
+  responsibilities,
+}: {
+  responsibilities: string[];
+}) {
+  return (
+    <div>
+      <h4 className="mb-2 font-medium">Responsibilities</h4>
+      <ul className="text-muted-foreground list-disc space-y-1 pl-5">
+        {responsibilities.map((responsibility, index) => (
+          <li key={index}>{responsibility}</li>
+        ))}
+      </ul>
+    </div>
   );
 }
 
@@ -202,7 +224,9 @@ function CompanyPage({ company }: { company: Company }) {
           technologies={company.technologies}
         />
 
-        <CompanyProjects projects={company.projects} />
+        {company.projects.length > 0 && (
+          <CompanyProjects projects={company.projects} />
+        )}
 
         <div className="flex justify-center pt-4">
           <Button asChild>
