@@ -5,6 +5,7 @@ import { Badge } from "~/components/ui/badge";
 import { Button } from "~/components/ui/button";
 import { Card, CardContent } from "~/components/ui/card";
 import { Separator } from "~/components/ui/separator";
+import { type Company, companiesMap } from "~/constants/companies";
 
 export default async function ProjectPage({
   params,
@@ -12,7 +13,7 @@ export default async function ProjectPage({
   readonly params: Promise<{ id: string }>;
 }) {
   const companyId = (await params).id;
-  const company = {};
+  const company = companiesMap.get(companyId);
   if (!company) {
     return (
       <div className="flex min-h-screen flex-col items-center justify-center">
@@ -37,8 +38,8 @@ export default async function ProjectPage({
         <ArrowLeft className="mr-2 h-4 w-4" />
         Back Home
       </Link>
-      <div className="relative mt-8 aspect-video max-h-96 min-h-32 max-w-full grow overflow-hidden rounded-lg">
-        Company Page: {companyId}
+      <div className="bg-accent rounded-lg p-4">
+        <CompanyPage company={company} />
       </div>
     </main>
   );
@@ -180,20 +181,6 @@ function CompanyProjects({
   );
 }
 
-type Company = {
-  name: string;
-  logo: string;
-  location: string;
-  industry: string;
-  website: string;
-  description: string;
-  role: string;
-  period: string;
-  responsibilities: string[];
-  technologies: string[];
-  projects: { name: string; description: string; impact: string }[];
-};
-
 function CompanyPage({ company }: { company: Company }) {
   return (
     <div className="container max-w-4xl py-10">
@@ -221,7 +208,7 @@ function CompanyPage({ company }: { company: Company }) {
 
         <div className="flex justify-center pt-4">
           <Button asChild>
-            <Link href="/contact">Contact me to learn more</Link>
+            <Link href="/">Back Home</Link>
           </Button>
         </div>
       </div>

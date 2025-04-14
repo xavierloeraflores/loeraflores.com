@@ -1,39 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-
-type Company = {
-  id: string;
-  name: string;
-  logo: string;
-  url: string;
-};
-
-const companies: Company[] = [
-  {
-    id: "begin",
-    name: "Begin Software",
-    logo: "/images/companies/begin.png",
-    url: "https://www.begin.com",
-  },
-  {
-    id: "fullstack",
-    name: "FullStack Academy",
-    logo: "/images/companies/fullstack.png",
-    url: "https://www.fullstackacademy.com",
-  },
-  {
-    id: "codepath",
-    name: "CodePath",
-    logo: "/images/companies/codepath.png",
-    url: "https://www.codepath.org",
-  },
-  {
-    id: "propslab",
-    name: "PropsLab",
-    logo: "/images/companies/propslab.png",
-    url: "https://www.propslab.io",
-  },
-];
+import { companies, type Company } from "~/constants/companies";
 
 export default function Companies() {
   return (
