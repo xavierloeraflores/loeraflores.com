@@ -10,8 +10,7 @@ import { ThemeProvider } from "~/providers/theme-provider";
 import { Toaster } from "~/components/ui/sonner";
 export const metadata: Metadata = {
   title: "Xavier Loera Flores",
-  description:
-    "Welcome to my website. I'm a software engineer and a full stack developer.",
+  description: "Engineer. Educator. Entrepreneur.",
   icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
 import { ThemeModeToggle } from "~/components/ui/theme-mode-toggle";
