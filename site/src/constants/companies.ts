@@ -112,9 +112,9 @@ const mappy: Company = {
 };
 
 export const companies: Company[] = [
-  begin,
   fullstack,
   propslab,
+  begin,
   mappy,
   codepath,
 ];

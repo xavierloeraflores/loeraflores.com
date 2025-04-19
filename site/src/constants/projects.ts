@@ -51,8 +51,14 @@ const mappy: Project = {
   description:
     "Contracted project for a promotional marketing landing site for a cryptocurrency project built in React.",
   image: "/images/projects/mappy.png",
-  links: [],
-  tags: ["React"],
+  links: [
+    {
+      name: "Live (Backup)",
+      url: "https://mappy.loeraflores.com",
+      icon: "site",
+    },
+  ],
+  tags: ["React", "Sass"],
 };
 
 const custodia: Project = {
