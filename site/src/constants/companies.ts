@@ -93,7 +93,31 @@ const propslab: Company = {
   projects: [],
 };
 
-export const companies: Company[] = [begin, fullstack, codepath, propslab];
+const mappy: Company = {
+  id: "mappy",
+  name: "MappyCoin",
+  logo: "/images/companies/mappy.png",
+  website: "https://mappycoin.vercel.app",
+  location: "Remote",
+  industry: "Blockchain",
+  description:
+    "(Now out of development) Named after the famous Namco game “Mappy”, Mappy Coin takes its roots from the arcade universe and transcends it into the Crypto world. With Hassle-free token distribution in your wallet, Mappy provides an all-new take on Yield Farming & Staking through its unique DEX platform.",
+  role: "Software Developer & Community Manager",
+  period: "August 2021 - March 2022",
+  responsibilities: [
+    "MappyCoin.com was a cryptocurrency project on the Binance Smart Chain Network where I contributed with development of the website and expanded my role to include community management duties and assisting in making business decisions.",
+  ],
+  technologies: ["React", "Sass", "Node.js"],
+  projects: [],
+};
+
+export const companies: Company[] = [
+  begin,
+  fullstack,
+  propslab,
+  mappy,
+  codepath,
+];
 
 export const companiesMap = new Map<string, Company>(
   companies.map((company) => [company.id, company]),
