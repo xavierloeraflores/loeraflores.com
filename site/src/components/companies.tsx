@@ -4,7 +4,7 @@ import { companies, type Company } from "~/constants/companies";
 
 export default function Companies() {
   return (
-    <div className="flex w-full flex-row justify-center gap-4">
+    <div className="flex w-full flex-row flex-wrap justify-center gap-4">
       {companies.map((company) => (
         <Company key={company.name} company={company} />
       ))}

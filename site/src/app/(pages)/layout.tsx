@@ -8,11 +8,22 @@ import Header from "~/components/header";
 import Footer from "~/components/footer";
 import { ThemeProvider } from "~/providers/theme-provider";
 import { Toaster } from "~/components/ui/sonner";
+import OpenGraphImage from "~/app/opengraph-image.png";
 export const metadata: Metadata = {
   title: "Xavier Loera Flores",
-  description:
-    "Welcome to my website. I'm a software engineer and a full stack developer.",
+  description: "Engineer. Educator. Entrepreneur.",
   icons: [{ rel: "icon", url: "/favicon.ico" }],
+  openGraph: {
+    title: "Xavier Loera Flores",
+    description: "Engineer. Educator. Entrepreneur.",
+    siteName: "Xavier Loera Flores",
+    url: "https://loeraflores.com",
+    images: [
+      {
+        url: OpenGraphImage.src,
+      },
+    ],
+  },
 };
 import { ThemeModeToggle } from "~/components/ui/theme-mode-toggle";
 
