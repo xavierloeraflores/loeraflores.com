@@ -24,7 +24,9 @@ const begin: Company = {
     "Your Guide to a Business on Autopilot: We help rapidly growing SMBs leverage technology to drive sustainable growth without high switching costs. Our workflow consulting, process automation, and low code development solutions are designed to save hundreds of hours every week.",
   role: "Automation Engineer",
   period: "May 2022 - December 2022",
-  responsibilities: [],
+  responsibilities: [
+    "Utilized APIs and webhooks from our clients' services and applications by integrating them in automations to improve business workflows.",
+  ],
   technologies: [
     "JavaScript",
     "Node.js",
@@ -33,7 +35,15 @@ const begin: Company = {
     "HubSpot",
     "ActiveCampaign",
   ],
-  projects: [],
+  projects: [
+    {
+      name: "Sales Automation",
+      description:
+        "Developed an automation for a client that stored and tracked contact details and sales progress for sending email drips at different stages prompting calls or payment.",
+      impact:
+        "Saved several hours the CEO's time daily and converted more paying customers by at least 20%.",
+    },
+  ],
 };
 
 const fullstack: Company = {
@@ -47,7 +57,11 @@ const fullstack: Company = {
     "Fullstack Academy is one of the nation's longest-running and most reputable tech bootcamp providers. Founded in 2012, Fullstack Academy offers immersive, live online bootcamps in Coding, Cybersecurity, Data Analytics, AI & Machine Learning, and more. Fullstack Academy also offers the Grace Hopper Program, an immersive web development training program for women and non-binary students, in addition to partnerships with leading universities, organizations, and government agencies nationwide. We've helped over 10,000 graduates build fulfilling tech careers at companies like Google, Facebook, Amazon, Fortune 100 firms, and more. \n Fullstack Academy is headquartered in New York City but operates as a remote company with staff members located all around the nation. As a team, we work to consistently improve the student experience while trusting each other to do the right thing. United under the common cause of skilling and empowering the next generation of tech professionals, we aim to grow an innovative, respectful, and collaborative work environment to help our team thrive. ",
   role: "Fullstack Developer & Amazon Software Engineering Mentor II",
   period: "February 2023 - March 2025",
-  responsibilities: [],
+  responsibilities: [
+    "Guided and facilitated the technical education and development of over 50 Amazon software engineers. per cohort.",
+    "Developed several Next.js websites to help facilitate the needs of the class as well as a static website with HUGO featuring supplemental technical learning material.",
+    "Provided assistance, guidance, and reviews for over 100 weekly projects and assignments using technologies and tools such as HTML, CSS, JavaScript, React, Node, Express, PostgreSQL, Sequelize, AWS, Heroku, & Git.",
+  ],
   technologies: [
     "Next.js",
     "TailwindCSS",
@@ -58,7 +72,15 @@ const fullstack: Company = {
     "PostgreSQL",
     "Express",
   ],
-  projects: [],
+  projects: [
+    {
+      name: "Internal Student Resources Site",
+      description:
+        "Developed a static website with HUGO that presents supplemental technical learning material from markdown files.",
+      impact:
+        "Helped students learn and understand the fundamentals of web development and the technologies used to build the website.",
+    },
+  ],
 };
 
 const codepath: Company = {
@@ -72,9 +94,19 @@ const codepath: Company = {
     "CodePath is reprogramming higher education to create the first AI-native generation of engineers, CTOs, and founders. \n We deliver industry-vetted courses and career support centered on the needs of first-generation and low-income students. Our students train with senior engineers, intern at top companies, and rise together to become the tech leaders of tomorrow. \n With 30,000 students and alumni from 700 colleges now working at 2,000 companies, we are reshaping the tech workforce and the industries of the future.",
   role: "Software Engineer Intern",
   period: "June 2021 - August 2021",
-  responsibilities: [],
+  responsibilities: [
+    "Co-developed an MVP application under supervision following the Scrum methodology.",
+  ],
   technologies: ["React", "Node.js", "PostgreSQL", "Express"],
-  projects: [],
+  projects: [
+    {
+      name: "Kurios Crypto Dashboard",
+      description:
+        "Developed an MVP dashboard that fetches and displays real-time crypto data and allows users to track their portfolio.",
+      impact:
+        'Successfully developed and deployed a fully functional dashboard on time despite working with a smaller team and limited resources. My performance exceeded expectations and was specifically recognized by my technical supervisor as having a "highly professional level of technical discipline and collaborative communication".',
+    },
+  ],
 };
 
 const propslab: Company = {
