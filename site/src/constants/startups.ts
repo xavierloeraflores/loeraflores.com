@@ -65,7 +65,7 @@ const momopromo: Company = {
   ],
 };
 
-export const startups: Company[] = [custodia, momopromo];
+export const startups: Company[] = [momopromo, custodia];
 
 export const startupsMap = new Map<string, Company>(
   startups.map((startup) => [startup.id, startup]),
