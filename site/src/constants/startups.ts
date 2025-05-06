@@ -4,7 +4,7 @@ const custodia: Company = {
   id: "custodia",
   name: "Custodia AI",
   logo: "/images/startups/custodia.png",
-  location: "Remote",
+  location: "San Francisco Bay Area",
   industry: "AI",
   website: "https://custodia.life",
   description:
@@ -36,7 +36,36 @@ const custodia: Company = {
   ],
 };
 
-export const startups: Company[] = [custodia];
+const momopromo: Company = {
+  id: "momopromo",
+  name: "MomoPromo",
+  logo: "/images/startups/momopromo.png",
+  location: "San Jose, CA",
+  industry: "Marketing | Creator Economy",
+  website: "https://momopromo.net",
+  description:
+    "MomoPromo is a two-sided influencer marketing marketplace where creators list advertising opportunities on their social media profiles and businesses can directly purchase ad placements. The platform streamlines collaboration between small creators and brands, with a focus on transparency, monetization, and ease of use.",
+  role: "Solo Founder",
+  period: "Sep 2024 - Present",
+  responsibilities: [
+    "Designed and built a two-sided marketplace connecting social media influencers with brands.",
+    "Implemented listing management, messaging, and transaction flows using full-stack web technologies.",
+    "Conducted user research with creators and small businesses to inform product development.",
+    "Developed an automated content creation system to generate promotional content.",
+  ],
+  technologies: ["Next.js", "TypeScript", "MongoDB", "Clerk Auth", "Stripe"],
+  projects: [
+    {
+      name: "Marketplace MVP",
+      description:
+        "Launched a minimal viable product allowing influencers to list ad space and businesses to discover, message, and purchase placements directly.",
+      impact:
+        "Selected as one of Beta University's Batch 7 startups to join their startup accelerator program.",
+    },
+  ],
+};
+
+export const startups: Company[] = [custodia, momopromo];
 
 export const startupsMap = new Map<string, Company>(
   startups.map((startup) => [startup.id, startup]),
