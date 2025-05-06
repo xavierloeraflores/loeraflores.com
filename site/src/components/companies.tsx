@@ -1,20 +1,42 @@
 import Image from "next/image";
 import Link from "next/link";
 import { companies, type Company } from "~/constants/companies";
+import { startups } from "~/constants/startups";
 
-export default function Companies() {
+export function Startups() {
   return (
-    <div className="flex w-full flex-row flex-wrap justify-center gap-4">
-      {companies.map((company) => (
-        <Company key={company.name} company={company} />
-      ))}
-    </div>
+    <section className="flex flex-col items-center gap-4">
+      <h2 className="text-2xl font-bold">Founding Companies</h2>
+      <div className="flex w-full flex-row flex-wrap justify-center gap-4">
+        {startups.map((startup) => (
+          <Company type="startups" key={startup.name} company={startup} />
+        ))}
+      </div>
+    </section>
+  );
+}
+export function Companies() {
+  return (
+    <section className="flex flex-col items-center gap-4">
+      <h2 className="text-2xl font-bold">Employed Companies</h2>
+      <div className="flex w-full flex-row flex-wrap justify-center gap-4">
+        {companies.map((company) => (
+          <Company type="companies" key={company.name} company={company} />
+        ))}
+      </div>
+    </section>
   );
 }
 
-function Company({ company }: { company: Company }) {
+function Company({
+  company,
+  type,
+}: {
+  company: Company;
+  type: "startups" | "companies";
+}) {
   return (
-    <Link href={`/companies/${company.id}`} className="relative h-24 w-96">
+    <Link href={`/${type}/${company.id}`} className="relative h-24 w-96">
       <Image
         src={company.logo}
         alt={company.name}
