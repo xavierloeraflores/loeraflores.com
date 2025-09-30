@@ -120,7 +120,26 @@ const propslab: Company = {
     "PropsLab is a community of sports and betting enthusiasts who use cutting-edge technology to predict outcomes and provide valuable insights into the world of sports betting.",
   role: "Software Engineer",
   period: "August 2024 - December 2024",
-  responsibilities: [],
+  responsibilities: [
+    "Developed a web application to serve as the company's landing page and drove customers to join the paid membership program.",
+  ],
+  technologies: ["Next.js", "Tailwind CSS", "Shadcn UI"],
+  projects: [],
+};
+const kafein: Company = {
+  id: "kafein",
+  name: "Kafein",
+  logo: "/images/companies/kafein.png",
+  website: "https://sipkafein.com",
+  location: "San Jose, CA",
+  industry: "Food & Beverage",
+  description:
+    "Kafein is a coffee shop chain that offers a variety of coffee and tea drinks. I am working on a project to help the company manage their inventory and orders.",
+  role: "Software Engineer",
+  period: "June 2025 - Present",
+  responsibilities: [
+    "Developed a web application to serve as the company's landing page and allow customers to order their drinks online.",
+  ],
   technologies: ["Next.js", "Tailwind CSS", "Shadcn UI"],
   projects: [],
 };
@@ -144,6 +163,7 @@ const mappy: Company = {
 };
 
 export const companies: Company[] = [
+  kafein,
   fullstack,
   propslab,
   begin,

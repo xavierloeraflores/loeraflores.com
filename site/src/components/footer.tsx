@@ -1,5 +1,11 @@
 import Link from "next/link";
-import { FaGithub, FaLinkedin, FaXTwitter, FaBluesky } from "react-icons/fa6";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaXTwitter,
+  FaBluesky,
+  FaInstagram,
+} from "react-icons/fa6";
 import { Separator } from "./ui/separator";
 
 export default function Footer() {
@@ -18,8 +24,11 @@ export default function Footer() {
         <Link href="https://bsky.app/profile/loeraflores.com">
           <FaBluesky className="h-6 w-6" />
         </Link>
-        <Link href="https://x.com/TheLoeraFlores ">
+        <Link href="https://x.com/XLoeraFlores ">
           <FaXTwitter className="h-6 w-6" />
+        </Link>
+        <Link href="https://www.instagram.com/xavierloeraflores/">
+          <FaInstagram className="h-6 w-6" />
         </Link>
       </div>
       <Separator />
