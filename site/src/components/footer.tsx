@@ -5,6 +5,7 @@ import {
   FaXTwitter,
   FaBluesky,
   FaInstagram,
+  FaReddit,
 } from "react-icons/fa6";
 import { Separator } from "./ui/separator";
 
@@ -29,6 +30,9 @@ export default function Footer() {
         </Link>
         <Link href="https://www.instagram.com/xavierloeraflores/">
           <FaInstagram className="h-6 w-6" />
+        </Link>
+        <Link href="https://reddit.com/u/xavierloeraflores">
+          <FaReddit className="h-6 w-6" />
         </Link>
       </div>
       <Separator />
