@@ -41,6 +41,9 @@ function ProjectCard({ project }: { readonly project: Project }) {
         </CardHeader>
         <CardContent>
           <CardTitle className="text-xl">{project.title}</CardTitle>
+          {project.period ? (
+            <p className="text-muted-foreground text-sm">{project.period}</p>
+          ) : null}
         </CardContent>
         <CardFooter>
           <div className="flex flex-wrap gap-2">
