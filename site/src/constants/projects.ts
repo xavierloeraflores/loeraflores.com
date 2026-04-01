@@ -27,11 +27,6 @@ const dollarping: Project = {
       url: "https://www.dollarping.com/",
       icon: "site",
     },
-    {
-      name: "App",
-      url: "https://app.dollarping.com",
-      icon: "site",
-    },
   ],
   tags: ["Next.js", "TypeScript", "FinTech"],
   period: "Feb 2026 - Mar 2026",
