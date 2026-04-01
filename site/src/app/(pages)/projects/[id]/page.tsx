@@ -42,6 +42,9 @@ export default async function ProjectPage({
       <Card className="w-full max-w-2xl p-4">
         <CardHeader>
           <CardTitle className="text-2xl font-bold">{project.title}</CardTitle>
+          {project.period ? (
+            <p className="text-muted-foreground text-sm">{project.period}</p>
+          ) : null}
           <div className="flex flex-row gap-4">
             {project.tags.map((tag) => (
               <Badge key={tag}>{tag}</Badge>

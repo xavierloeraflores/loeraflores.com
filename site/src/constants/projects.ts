@@ -11,6 +11,30 @@ export type Project = {
   image: string;
   links: ProjectLink[];
   tags: string[];
+  /** Shown on the project card and detail page when set */
+  period?: string;
+};
+
+const dollarping: Project = {
+  id: "dollarping",
+  title: "Dollar Ping",
+  description:
+    "A platform that automates small recurring charges on your credit cards so accounts stay active—helping avoid inactivity closures, reduce mental overhead from tracking many cards, and keep utilization and credit age healthier. Users pick their cards, connect through a secure dashboard with tokenization (full card numbers are not stored on Dollar Ping servers), and choose 6- or 12-month “ping” schedules aligned with bank expectations.",
+  image: "https://www.dollarping.com/dollar-coin.jpg",
+  links: [
+    {
+      name: "Live",
+      url: "https://www.dollarping.com/",
+      icon: "site",
+    },
+    {
+      name: "App",
+      url: "https://app.dollarping.com",
+      icon: "site",
+    },
+  ],
+  tags: ["Next.js", "TypeScript", "FinTech"],
+  period: "Feb 2026 - Mar 2026",
 };
 
 const momopromo: Project = {
@@ -221,6 +245,7 @@ const github_url_converter: Project = {
 };
 
 export const projects: Project[] = [
+  dollarping,
   momopromo,
   custodia,
   scam_scammer,
