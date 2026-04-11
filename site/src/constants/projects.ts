@@ -246,6 +246,27 @@ const vercel_redirect: Project = {
   tags: ["Vercel", "vercel.json", "Redirects"],
 };
 
+const infinitytool: Project = {
+  id: "infinitytool",
+  title: "InfinityTool",
+  description:
+    "A growing library of focused tools with searchable discovery and dedicated tool pages built for fast repeat use.",
+  image: "/images/projects/infinitytool.svg",
+  links: [
+    {
+      name: "Live",
+      url: "https://www.infinitytool.app/",
+      icon: "site",
+    },
+    {
+      name: "Tools",
+      url: "https://www.infinitytool.app/tools",
+      icon: "link",
+    },
+  ],
+  tags: ["Next.js", "Vercel", "Utilities"],
+};
+
 export const projects: Project[] = [
   momopromo,
   custodia,
@@ -257,6 +278,7 @@ export const projects: Project[] = [
   mappy,
   github_url_converter,
   vercel_redirect,
+  infinitytool,
 ];
 
 export const projectsMap = new Map<string, Project>(
