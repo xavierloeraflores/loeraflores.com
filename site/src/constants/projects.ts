@@ -220,6 +220,32 @@ const github_url_converter: Project = {
   tags: ["React", "Next.js", "Tailwind CSS"],
 };
 
+const vercel_redirect: Project = {
+  id: "vercel-redirect",
+  title: "Vercel Redirect Template",
+  description:
+    "A minimal Vercel template for one-click domain redirects that forwards traffic to another site with optional path preservation.",
+  image: "/images/projects/github.png",
+  links: [
+    {
+      name: "GitHub",
+      url: "https://github.com/xavierloeraflores/vercel-redirect",
+      icon: "github",
+    },
+    {
+      name: "Demo",
+      url: "https://vercel-domain-redirect-demo.vercel.app",
+      icon: "site",
+    },
+    {
+      name: "Deploy",
+      url: "https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fxavierloeraflores%2Fvercel-redirect",
+      icon: "link",
+    },
+  ],
+  tags: ["Vercel", "vercel.json", "Redirects"],
+};
+
 export const projects: Project[] = [
   momopromo,
   custodia,
@@ -230,6 +256,7 @@ export const projects: Project[] = [
   propslab,
   mappy,
   github_url_converter,
+  vercel_redirect,
 ];
 
 export const projectsMap = new Map<string, Project>(
