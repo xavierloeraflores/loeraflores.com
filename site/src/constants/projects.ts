@@ -239,7 +239,75 @@ const github_url_converter: Project = {
   tags: ["React", "Next.js", "Tailwind CSS"],
 };
 
+const vercel_redirect: Project = {
+  id: "vercel-redirect",
+  title: "Vercel Redirect Template",
+  description:
+    "A minimal Vercel template for one-click domain redirects that forwards traffic to another site with optional path preservation.",
+  image: "/images/projects/vercel-redirect.svg",
+  links: [
+    {
+      name: "GitHub",
+      url: "https://github.com/xavierloeraflores/vercel-redirect",
+      icon: "github",
+    },
+    {
+      name: "Demo",
+      url: "https://vercel-domain-redirect-demo.vercel.app",
+      icon: "site",
+    },
+    {
+      name: "Deploy",
+      url: "https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fxavierloeraflores%2Fvercel-redirect",
+      icon: "link",
+    },
+  ],
+  tags: ["Vercel", "vercel.json", "Redirects"],
+};
+
+const infinitytool: Project = {
+  id: "infinitytool",
+  title: "InfinityTool",
+  description:
+    "A growing library of focused tools with searchable discovery and dedicated tool pages built for fast repeat use.",
+  image: "/images/projects/infinitytool.svg",
+  links: [
+    {
+      name: "Live",
+      url: "https://www.infinitytool.app/",
+      icon: "site",
+    },
+    {
+      name: "Tools",
+      url: "https://www.infinitytool.app/tools",
+      icon: "link",
+    },
+  ],
+  tags: ["Next.js", "Vercel", "Utilities"],
+};
+
+const studytype: Project = {
+  id: "studytype",
+  title: "StudyType",
+  description:
+    "A study tool that helps users retain subject knowledge by repeatedly taking typing tests, combining repetition-based practice with faster typing and AI-generated study sets for premium users.",
+  image: "/images/projects/studytype.svg",
+  links: [
+    {
+      name: "Live",
+      url: "https://www.studytype.app",
+      icon: "site",
+    },
+  ],
+  tags: ["Next.js", "Convex", "Clerk"],
+};
+
+// New projects are added at the top of this list.
 export const projects: Project[] = [
+
+  studytype,
+  infinitytool,
+  vercel_redirect,
   dollarping,
   momopromo,
   custodia,
@@ -249,7 +317,8 @@ export const projects: Project[] = [
   kurios,
   propslab,
   mappy,
-  github_url_converter,
+
+  github_url_converter
 ];
 
 export const projectsMap = new Map<string, Project>(

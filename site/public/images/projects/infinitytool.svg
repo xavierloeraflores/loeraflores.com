@@ -1,0 +1,16 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#F7F1E8"/>
+  <rect y="0" width="1200" height="88" fill="#FFEF5C"/>
+  <rect x="176" y="20" width="144" height="48" rx="24" fill="white" stroke="black" stroke-width="4"/>
+  <rect x="927" y="20" width="112" height="48" rx="24" fill="#8BE9FD" stroke="black" stroke-width="4"/>
+  <rect x="140" y="140" width="920" height="190" rx="34" fill="white" stroke="black" stroke-width="6"/>
+  <rect x="170" y="190" width="122" height="34" rx="17" fill="#FFEF5C" stroke="black" stroke-width="3"/>
+  <rect x="305" y="190" width="262" height="34" rx="17" fill="#F7F1E8" stroke="black" stroke-width="3"/>
+  <rect x="874" y="184" width="156" height="46" rx="23" fill="white" stroke="black" stroke-width="4"/>
+  <rect x="140" y="360" width="920" height="220" rx="34" fill="#F2E9D8" stroke="black" stroke-width="6"/>
+  <rect x="170" y="400" width="404" height="150" rx="28" fill="#8BE9FD" stroke="black" stroke-width="5"/>
+  <rect x="602" y="400" width="142" height="150" rx="22" fill="#FFEF5C" stroke="black" stroke-width="5"/>
+  <rect x="766" y="400" width="142" height="150" rx="22" fill="white" stroke="black" stroke-width="5"/>
+  <rect x="930" y="400" width="100" height="150" rx="22" fill="#FF8A5B" stroke="black" stroke-width="5"/>
+  <text x="176" y="280" fill="black" font-family="Georgia, serif" font-size="64" font-weight="700">INFINITYTOOL</text>
+</svg>
