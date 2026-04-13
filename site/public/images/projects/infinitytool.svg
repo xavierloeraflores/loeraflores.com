@@ -12,12 +12,5 @@
   <rect x="602" y="400" width="142" height="150" rx="22" fill="#FFEF5C" stroke="black" stroke-width="5"/>
   <rect x="766" y="400" width="142" height="150" rx="22" fill="white" stroke="black" stroke-width="5"/>
   <rect x="930" y="400" width="100" height="150" rx="22" fill="#FF8A5B" stroke="black" stroke-width="5"/>
-  <text x="196" y="52" fill="black" font-family="Georgia, serif" font-size="20" font-weight="700" letter-spacing="5">INFINITYTOOL</text>
-  <text x="953" y="51" fill="black" font-family="Georgia, serif" font-size="17" font-weight="700" letter-spacing="3">ALL TOOLS</text>
-  <text x="192" y="214" fill="black" font-family="Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="3">LIVE TOOL</text>
-  <text x="326" y="214" fill="black" font-family="Courier New, monospace" font-size="15" font-weight="700" letter-spacing="2">/TOOL/DISCOVERY</text>
-  <text x="897" y="213" fill="black" font-family="Georgia, serif" font-size="15" font-weight="700" letter-spacing="3">BACK TO GALLERY</text>
   <text x="176" y="280" fill="black" font-family="Georgia, serif" font-size="64" font-weight="700">INFINITYTOOL</text>
-  <text x="177" y="318" fill="black" font-family="Arial, sans-serif" font-size="24" font-weight="500">A growing library of focused tools with searchable discovery</text>
-  <text x="177" y="347" fill="black" font-family="Arial, sans-serif" font-size="24" font-weight="500">and dedicated pages built for fast repeat use.</text>
 </svg>

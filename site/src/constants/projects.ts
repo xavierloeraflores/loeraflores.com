@@ -225,7 +225,7 @@ const vercel_redirect: Project = {
   title: "Vercel Redirect Template",
   description:
     "A minimal Vercel template for one-click domain redirects that forwards traffic to another site with optional path preservation.",
-  image: "/images/projects/github.png",
+  image: "/images/projects/vercel-redirect.svg",
   links: [
     {
       name: "GitHub",
@@ -267,18 +267,36 @@ const infinitytool: Project = {
   tags: ["Next.js", "Vercel", "Utilities"],
 };
 
+const studytype: Project = {
+  id: "studytype",
+  title: "StudyType",
+  description:
+    "A study tool that helps users retain subject knowledge by repeatedly taking typing tests, combining repetition-based practice with faster typing and AI-generated study sets for premium users.",
+  image: "/images/projects/studytype.svg",
+  links: [
+    {
+      name: "Live",
+      url: "https://www.studytype.app",
+      icon: "site",
+    },
+  ],
+  tags: ["Next.js", "Convex", "Clerk"],
+};
+
+// New projects are added at the top of this list.
 export const projects: Project[] = [
-  momopromo,
-  custodia,
-  scam_scammer,
-  content_moderation,
-  notes,
-  kurios,
-  propslab,
-  mappy,
-  github_url_converter,
-  vercel_redirect,
+  studytype,
   infinitytool,
+  vercel_redirect,
+  github_url_converter,
+  mappy,
+  propslab,
+  kurios,
+  notes,
+  content_moderation,
+  scam_scammer,
+  custodia,
+  momopromo,
 ];
 
 export const projectsMap = new Map<string, Project>(
