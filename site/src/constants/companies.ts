@@ -129,7 +129,7 @@ const propslab: Company = {
 const kafein: Company = {
   id: "kafein",
   name: "Kafein",
-  logo: "/images/companies/kafein.png",
+  logo: "/images/companies/sip-kafein.png",
   website: "https://sipkafein.com",
   location: "San Jose, CA",
   industry: "Food & Beverage",
