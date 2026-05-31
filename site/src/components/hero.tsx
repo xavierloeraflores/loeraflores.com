@@ -1,7 +1,4 @@
 import { BoxReveal } from "./magicui/box-reveal";
-import { buttonVariants } from "./ui/button";
-import Link from "next/link";
-import { cn } from "~/lib/utils";
 import { HighlightText } from "./highlight";
 export default function Hero() {
   return (
@@ -31,18 +28,6 @@ export default function Hero() {
         </div>
       </BoxReveal>
 
-      <BoxReveal boxColor={"#5046e6"} duration={0.5}>
-        <Link
-          href="/files/resume.pdf"
-          className={cn(
-            buttonVariants({ variant: "default" }),
-            "mt-[1.6rem] bg-[#5046e6]",
-          )}
-          target="_blank"
-        >
-          Resume
-        </Link>
-      </BoxReveal>
     </div>
   );
 }
